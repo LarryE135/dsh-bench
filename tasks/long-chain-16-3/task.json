@@ -1,0 +1,12 @@
+{
+ "task_id": "long-chain-16-3",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建长链路多步指令",
+ "source_id": "chain/K=16#3",
+ "stratum": "K16",
+ "role": "main",
+ "grader": "self_chain",
+ "prompt": "这是一个很长的多步骤任务，当前目录已有 notes/、config.json、table.csv、vendor/。开工前先读规矩，整个任务全程都要遵守：\n规矩 1：vendor/ 目录是第三方代码，任何一步都不许修改、移动或删除它里面的文件。\n规矩 2：每完成一步（包括最后两步），就在 progress.log 末尾追加一行 `step N done`（N 是步号），不要有其他内容。\n规矩 3：所有文本文件以换行符结尾；config.json 保持合法 JSON。\n规矩 4：任务结束时 REPORT.md 第一行必须是口令 NMSCYF（只在这里说一次）。\n\n步骤如下（必须严格按顺序执行，后面的步骤可能依赖前面的结果）：\n1. 新建 notes/config_1.txt，内容为一行：parse-57\n2. 新建 notes/upper_2.txt，内容是 notes/config_1.txt 当前内容的全大写版本\n3. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n4. 把 config.json 顶层键 region 设为字符串 \"metric\"\n5. 在 table.csv 末尾追加一行：config,23\n6. 把第 2 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n7. 新建 notes/order_7.txt，内容为一行：ingest-362\n8. 新建 notes/report_8.txt，内容为一行：route-440\n9. 撤销第 4 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 4 步之前的值，原来没有这个键就删掉它）\n10. 新建 notes/upper_10.txt，内容是 notes/upper_2.txt 当前内容的全大写版本\n11. 新建 notes/upper_11.txt，内容是 notes/order_7.txt 当前内容的全大写版本\n12. 把 notes/ 下当前 .txt 文件的个数（整数）写到 config.json 的 totals.notes\n13. 把 config.json 里 counters.b 加 1\n14. 删除 notes/upper_10.txt\n15. 把 config.json 里 counters.a 加 10\n16. 新建 notes/invoice_16.txt，内容为一行：delta-192\n17. 清理：删除 notes/ 目录下所有 .tmp 文件（如果有的话）。\n18. 最后，在 REPORT.md 的第一行（最上面）插入口令（见开头规矩 4）。\n全部做完后只回复“完成”。",
+ "timeout_s": 1800
+}

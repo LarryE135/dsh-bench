@@ -1,0 +1,2 @@
+- 补全当前目录 solution.py 里已经给出的代码：类名 Solution、方法 {func_name}，签名不要改。可以使用 `from typing import *`。
+- 我会用更多输入（包括数据规模最大的情况）来检查，每组输入的运行时间要在 {case_seconds} 秒以内。

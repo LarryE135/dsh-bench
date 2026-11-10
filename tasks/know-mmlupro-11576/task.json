@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-11576",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "11576",
+ "license": "MIT",
+ "stratum": "engineering",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "LC oscillators are used for produce a waveform with frequency ranging from\n\nA. 1 kHz to 100 kHz\nB. 500 MHz to 1 GHz\nC. 1 Hz to 1 kHz\nD. 1 KHz to 1 MHz\nE. 10 kHz to 100 MHz\nF. 100 KHz to 500 MHz\nG. 1 MHz to 1 GHz\nH. 1MHz to 500 MHz\nI. 1MHz to 100 GHz\nJ. 1 GHz to 10 GHz\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

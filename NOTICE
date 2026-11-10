@@ -1,0 +1,48 @@
+DSH-Bench v1 — 第三方数据来源与署名
+
+本仓库的题面来自以下公开数据集与自建题。按各数据集的要求署名如下；逐题对应关系见
+manifest/manifest.csv（source / source_id / license 三列）。
+
+1. LiveCodeBench（33 题，code-lcb-*）
+   LiveCodeBench/code_generation_lite, release_v6（2025-01 ~ 2025-04）
+   https://github.com/LiveCodeBench/LiveCodeBench
+   题面为 LCB 的重写版本；原始题目版权归 LeetCode / AtCoder 所有。仅限评测研究使用。
+
+2. Aider Polyglot（20 题，code-poly-*）
+   Aider-AI/polyglot-benchmark，源自 Exercism 各语言 track
+   https://github.com/Aider-AI/polyglot-benchmark  /  https://github.com/exercism
+   MIT License（Exercism track 内容）
+
+3. SpreadsheetBench Verified（20 题，office-ssb-*）
+   KAKA22/SpreadsheetBench，Verified-400 子集
+   https://github.com/RUCKBReasoning/SpreadsheetBench
+   CC BY-SA 4.0
+
+4. MMLU-Pro（16 题，know-mmlupro-*）
+   TIGER-Lab/MMLU-Pro, test split
+   https://github.com/TIGER-Lab/MMLU-Pro
+   MIT License
+
+5. C-Eval Hard 子集（8 题，know-ceval-*）
+   https://github.com/hkust-nlp/ceval
+   CC BY-NC-SA 4.0 —— **非商用**；再分发需保留同一许可与署名。
+
+6. LongBench v2（17 题，long-lb2-*）
+   zai-org/LongBench-v2, length=short
+   https://github.com/THUDM/LongBench
+   Apache-2.0
+
+7. 自建题（54 题）
+   office-self-*（20）、long-chain-*（16）、long-needle-*（18）：本仓库作者自行构造，无外部数据来源，
+   随本仓库以 CC0 提供（见 LICENSE 的范围说明）。
+
+8. 可选门控数据集：GPQA Diamond（**未包含**在本包内）
+   需在 Hugging Face 同意条款后用 run.sh gpqa 现场生成，生成物同样受其条款约束。
+
+引用建议：
+  @misc{dsh_bench_v1,
+    title  = {DSH-Bench v1: 用自动判分的题测 DSH 换工具面 / 换预设的代价},
+    author = {LarryE135},
+    year   = {2026},
+    url    = {https://github.com/LarryE135/dsh-bench}
+  }

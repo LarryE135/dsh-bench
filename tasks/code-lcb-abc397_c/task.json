@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc397_c",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc397_c",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "medium",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Variety Split Easy\n\nThis problem is a simplified version of Problem F.\n\nYou are given an integer sequence of length N: A = (A_1, A_2, \\ldots, A_N).\nWhen splitting A at one position into two non-empty (contiguous) subarrays, find the maximum possible sum of the counts of distinct integers in those subarrays.\nMore formally, find the maximum sum of the following two values for an integer i such that 1 \\leq i \\leq N-1: the count of distinct integers in (A_1, A_2, \\ldots, A_i), and the count of distinct integers in (A_{i+1}, A_{i+2}, \\ldots, A_N).\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\nA_1 A_2 \\ldots A_N\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 2 \\leq N \\leq 3 \\times 10^5\n- 1 \\leq A_i \\leq N (1 \\leq i \\leq N)\n- All input values are integers.\n\nSample Input 1\n\n5\n3 1 4 1 5\n\nSample Output 1\n\n5\n\n\n- For i=1, (3) contains 1 distinct integer, and (1,4,1,5) contains 3 distinct integers, for a total of 4.\n- For i=2, (3,1) contains 2 distinct integers, and (4,1,5) contains 3 distinct integers, for a total of 5.\n- For i=3, (3,1,4) contains 3 distinct integers, and (1,5) contains 2 distinct integers, for a total of 5.\n- For i=4, (3,1,4,1) contains 3 distinct integers, and (5) contains 1 distinct integer, for a total of 4.\n\nTherefore, the maximum sum is 5 for i=2,3.\n\nSample Input 2\n\n10\n2 5 6 5 2 1 7 9 7 2\n\nSample Output 2\n\n8\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

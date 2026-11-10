@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP92844085
+Date: 13 Apr 2026
+Subtotal: 75,508.99
+Total: 83,898.88 CNY

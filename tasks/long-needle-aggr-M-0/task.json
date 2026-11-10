@@ -1,0 +1,13 @@
+{
+ "task_id": "long-needle-aggr-M-0",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建 RULER 式仓库检索",
+ "source_id": "aggr/M#0",
+ "stratum": "aggr-M",
+ "role": "main",
+ "grader": "exact_int",
+ "repo_chars": 174614,
+ "prompt": "统计这个仓库里：所有 ENABLED = True 的模块中，被 @route(...) 装饰的处理函数的 retry 参数之和是多少？（ENABLED = False 的模块和被注释掉的路由都不算。不要运行代码。）\n把最终答案（只写一个整数）保存到当前目录的 ANSWER.txt。",
+ "timeout_s": 1500
+}

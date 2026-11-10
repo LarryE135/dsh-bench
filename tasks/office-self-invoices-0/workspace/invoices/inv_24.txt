@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP23442355
+Date: 24 Apr 2026
+Subtotal: 6,308.32
+Total: 7,009.25 CNY

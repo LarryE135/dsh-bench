@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-region-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_region#0",
+ "stratum": "o_region",
+ "role": "main",
+ "grader": "self_o_region",
+ "prompt": "当前目录有 orders.csv（订单）和 customers.csv（客户，含所属大区）。请统计 2026 年第二季度（4月1日至6月30日，含两端）每个大区的订单数和订单总金额，写到 region_summary.csv，表头为 region,order_count,total_amount，金额保留两位小数，按 total_amount 从大到小排序。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

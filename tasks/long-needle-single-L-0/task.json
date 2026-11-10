@@ -1,0 +1,13 @@
+{
+ "task_id": "long-needle-single-L-0",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建 RULER 式仓库检索",
+ "source_id": "single/L#0",
+ "stratum": "single-L",
+ "role": "main",
+ "grader": "exact_int",
+ "repo_chars": 326282,
+ "prompt": "在这个仓库的 src/ 下（不算 tests/），常量 ORDER_SERVICE_TIMEOUT_MS 的值是多少？注意名字相近的常量。\n把最终答案（只写一个整数）保存到当前目录的 ANSWER.txt。",
+ "timeout_s": 1500
+}

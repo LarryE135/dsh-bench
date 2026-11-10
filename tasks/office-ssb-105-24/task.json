@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-105-24",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "105-24",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Sheet-Level Manipulation",
+ "role": "main",
+ "grader": "ssb_cells",
+ "answer_sheet": "Open",
+ "answer_position": "'Open'!C2:C23",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nIn my Excel file, the 'Open' sheet contains IDs in Columns C and K. Find all these IDs and replace them with their respective Names. The corresponding Names for these IDs are located in Columns A and B of the 'Productivity' sheet. I require assistance with creating a macro or to automate this replacement process and also automatically consider any new additions to Columns A and B in the future for replacements. Do not create instructions, explanations, or a ID_Lookup_Helper tab. Do not create add data to any other columns other than C or K in the Open tab.  Do not hide any data.\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看工作表「Open」的 'Open'!C2:C23 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

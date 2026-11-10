@@ -1,0 +1,24 @@
+# 只忽略仓库根目录的本地产物 —— 不要用无前缀的 config.json / *.log，
+# 否则会把 tasks/*/workspace/ 里的题目输入一起排掉（long-chain 的 config.json、
+# office-self-logs 的 access.log 都是**题目的输入文件**，缺了题就不成立）。
+/config.json
+/runs/
+/runs_pre/
+/runs_smoke/
+/raw/
+/report.md
+/interim.md
+/scorecard.png
+/scorecard.md
+/scorecard.js
+/final_ids.json
+__pycache__/
+*.pyc
+*.bad
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+~$*.xlsx
+# 按上游许可只披露、不发布的题：允许本地 bench/fetch_data.py 抓回来跑，但绝不能被提交
+tasks/know-ceval-*/

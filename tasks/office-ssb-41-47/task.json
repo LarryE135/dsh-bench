@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-41-47",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "41-47",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Sheet-Level Manipulation",
+ "role": "main",
+ "grader": "ssb_cells",
+ "answer_sheet": "OUT CAS",
+ "answer_position": "OUT CAS'!A2:C1529,'OUT CAS'!E2:G586,'OUT CAS'!I2:K13,'OUT CAS'!L2:O8",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nOn OUT CAS tab, I want to aggregate and summarize by account types. See the headers in the OUT CAS tables for the account types. Go through the 3 other sheets and aggregate each item in the appropriate bucket on OUT CAS. Order them by item number (i.e., 000011 should be before 000012). PUR Purchase should be pretty much correct if you want to use that as the example. Additionally, I want to be able to insert new sheets before the OUT CAS sheet when needed, and also have the ability to clear the existing data in the OUT CAS sheet before performing the split.\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看工作表「OUT CAS」的 OUT CAS'!A2:C1529,'OUT CAS'!E2:G586,'OUT CAS'!I2:K13,'OUT CAS'!L2:O8 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-9164",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "9164",
+ "license": "MIT",
+ "stratum": "physics",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "You’ve made a scientific theory that there is an attractive force between all objects. When will your theory be proven to be correct?\n\nA. When the theory can predict future observations.\nB. As soon as you propose the theory.\nC. When your theory becomes a law.\nD. You can never prove your theory to be correct only “yet to be proven wrong”.\nE. When the scientific community accepts it as a fact.\nF. The first time you drop a bowling ball and it falls to the ground proving your hypothesis.\nG. After you’ve repeated your experiment many times.\nH. When you and many others have tested the hypothesis.\nI. After a single successful experiment that supports your hypothesis.\nJ. When the theory is published in a scientific journal.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

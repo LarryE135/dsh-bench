@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-382-29",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "382-29",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Sheet-Level Manipulation",
+ "role": "reserve",
+ "grader": "ssb_cells",
+ "answer_sheet": "Totals",
+ "answer_position": "'Totals'!B2:B26",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nI have an Excel file with four sheets; three contain data and the fourth is a Totals sheet. I need a macro that can sum the quantities from a specific cell on each of the data sheets and then display the total on the Totals sheet. The process should be done for cells B2 through B26. In the attached workbook, I've manually calculated the total for cell B2 as an example, but my actual workbook will have around 100 sheets, and therefore I'm looking for an automated solution to perform this calculation instead of doing it by hand.\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看工作表「Totals」的 'Totals'!B2:B26 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

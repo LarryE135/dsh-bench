@@ -1,0 +1,15 @@
+{
+ "task_id": "code-lcb-abc396_g",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc396_g",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Flip Row or Col\n\nThere is a H \\times W grid, and each cell contains 0 or 1. The cell at the i-th row from the top and the j-th column from the left contains an integer A_{i,j}.\nYou can perform the following two operations any number of times in any order:\n\n- Operation X: Choose an integer x (1 \\leq x \\leq H). For every integer 1 \\leq y \\leq W, replace A_{x,y} with 1 - A_{x,y}.\n- Operation Y: Choose an integer y (1 \\leq y \\leq W). For every integer 1 \\leq x \\leq H, replace A_{x,y} with 1 - A_{x,y}.\n\nFind the minimum possible value of \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} after the process.\n\nInput\n\nThe input is given from Standard Input in the following format:\nH W\nA_{1,1}A_{1,2}\\ldots A_{1,W}\nA_{2,1}A_{2,2}\\ldots A_{2,W}\n\\vdots\nA_{H,1}A_{H,2}\\ldots A_{H,W}\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 1 \\leq H \\leq 2\\times 10^5\n- 1 \\leq W \\leq 18\n- H and W are integers.\n- A_{i,1}A_{i,2}\\ldots A_{i,W} is a length-W string consisting of 0 and 1.\n\nSample Input 1\n\n3 3\n100\n010\n110\n\nSample Output 1\n\n2\n\nBy performing the following operations, the grid changes as shown below, and you get \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} = 2.\n\n- Operation Y with y=1\n- Operation X with x=2\n\n\nIt is impossible to make \\displaystyle \\sum_{x=1}^H\\sum_{y=1}^W A_{x,y} \\leq 1, so the answer is 2.\n\nSample Input 2\n\n3 4\n1111\n1111\n1111\n\nSample Output 2\n\n0\n\nSample Input 3\n\n10 5\n10000\n00111\n11000\n01000\n10110\n01110\n10101\n00100\n00100\n10001\n\nSample Output 3\n\n13\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500,
+ "batch": "hard2"
+}

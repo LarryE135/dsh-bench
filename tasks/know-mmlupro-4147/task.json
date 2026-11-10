@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-4147",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "4147",
+ "license": "MIT",
+ "stratum": "chemistry",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "At 20 °C \\DeltaH for the reaction of one mole ofNaClwith suffi-cient water to give a solution containing 12%NaClby weight is 774.6 cal. At 25°C \\DeltaH for the same reaction is 700.8 cal. Calculate the heat capacity of the solution in cal/deg-g given the following: C_P of solidNaCl= 12 cal/deg-mole C_P for water = 18 cal/deg-mole .\n\nA. 1.10 cal/deg-g\nB. 1.48 cal/deg-g\nC. 0.92 cal/deg-g\nD. 0.66 cal/deg-g\nE. 0.87 cal/deg-g\nF. 1.35 cal/deg-g\nG. 0.75 cal/deg-g\nH. 1.23 cal/deg-g\nI. 1.01 cal/deg-g\nJ. 0.58 cal/deg-g\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

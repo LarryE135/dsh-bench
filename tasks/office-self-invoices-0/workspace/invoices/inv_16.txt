@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP94736431
+Date: 14 Jun 2026
+Subtotal: 56,798.07
+Total: 63,108.97 CNY

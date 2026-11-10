@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-4936",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "4936",
+ "license": "MIT",
+ "stratum": "history",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "By analyzing the levels of 13C in bones, researchers can establish whether an individual ate:\n\nA. a diet high in calcium or low in calcium.\nB. a diet high in saturated fats or low in saturated fats.\nC. mostly grains or mostly nuts and fruits.\nD. mostly root vegetables or mostly leafy greens.\nE. a diet rich in sugar or low in sugar.\nF. a certain type of honey produced only in sub-Saharan Africa.\nG. mostly meat or mostly vegetables.\nH. mostly fish or mostly poultry.\nI. no dairy or lots of dairy.\nJ. mostly processed foods or mostly organic foods.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

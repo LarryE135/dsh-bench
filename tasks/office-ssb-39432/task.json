@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-39432",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "39432",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Cell-Level Manipulation",
+ "role": "main",
+ "grader": "ssb_cells",
+ "answer_sheet": null,
+ "answer_position": "M2:M5",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nHow do I create an automated formula in Excel for column M to calculate the per unit cost of an item based on FIFO method, where Column A lists items, Column B shows the beginning inventory level, Column C gives cost per item from B, subsequent columns show units received and costs from multiple purchase orders, Column L shows current inventory on hand, and Column M needs to show the per unit cost which could be based on the last purchase order if L is less or would need an average from multiple orders if L is higher?\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看M2:M5 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

@@ -1,0 +1,13 @@
+{
+ "task_id": "long-needle-chain-M-0",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建 RULER 式仓库检索",
+ "source_id": "chain/M#0",
+ "stratum": "chain-M",
+ "role": "main",
+ "grader": "exact_int",
+ "repo_chars": 171720,
+ "prompt": "这个仓库里常量 K_YQAQ 的最终数值是多少？（它由其它模块里的常量一步步计算而来，请按代码实际含义求值，不要运行任何代码。）\n把最终答案（只写一个整数）保存到当前目录的 ANSWER.txt。",
+ "timeout_s": 1500
+}

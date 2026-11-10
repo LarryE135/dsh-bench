@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-4780",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "4780",
+ "license": "MIT",
+ "stratum": "history",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "What was the Chinese technique of stamped or pounded earth that was used in construction of house walls and defensive structures?\n\nA. Ming Dynasty Ceramic Art\nB. Qin manufacture\nC. Han Stoneware\nD. Lung-shan\nE. Hangzhou Style\nF. Scapulimancy\nG. Hang-t'u\nH. Jomon Pottery\nI. Tang Sancai\nJ. Yuan Blue-and-white\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

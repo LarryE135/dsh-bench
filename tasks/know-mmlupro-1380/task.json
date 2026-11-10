@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-1380",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "1380",
+ "license": "MIT",
+ "stratum": "law",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "What is the meaning of collective security?\n\nA. The establishment of a mutual defense pact among several nations\nB. The right of a nation to defend itself without outside intervention\nC. The authorisation of armed force by the UN Security Council\nD. The authorisation of humanitarian missions by the UN Security Council\nE. The right of one's allies to defend the victim State\nF. The authorisation of sanctions by the UN Security Council\nG. The right to self-defence by more than one nation acting in concert\nH. The right of a nation to invade another for its own security\nI. The authorisation of peacekeeping missions by the UN General Assembly\nJ. The creation of a global police force by the UN\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

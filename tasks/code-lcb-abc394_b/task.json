@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc394_b",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc394_b",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "easy",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：cat\n\nYou are given N strings S_1, S_2, \\ldots, S_N, each consisting of lowercase English letters. The lengths of these strings are all distinct.\nSort these strings in ascending order of length, and then concatenate them in that order to form a single string.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\r\nS_1\r\nS_2\r\n\\vdots\r\nS_N\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 2 \\leq N \\leq 50\n- N is an integer.\n- Each S_i is a string consisting of lowercase English letters with length between 1 and 50, inclusive.\n- If i \\neq j, the length of S_i is different from the length of S_j.\n\nSample Input 1\n\n3\r\ntc\r\noder\r\na\n\nSample Output 1\n\natcoder\r\n\nWhen we sort (tc, oder, a) in ascending order of length, we get (a, tc, oder). Concatenating them in this order yields the string atcoder.\n\nSample Input 2\n\n4\r\ncat\r\nenate\r\non\r\nc\n\nSample Output 2\n\nconcatenate\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

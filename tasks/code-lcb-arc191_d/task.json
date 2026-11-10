@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-arc191_d",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "arc191_d",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "reserve",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Moving Pieces on Graph\n\nYou are given a simple connected undirected graph with N vertices and M edges, where the vertices are numbered 1 to N and the edges are numbered 1 to M. Edge i connects vertex u_i and vertex v_i in both directions.\nInitially, there is a piece A on vertex S and a piece B on vertex T. Here, S and T are given as input.\nYou may perform the following operation any number of times in any order:\n\n- Choose either piece A or piece B, and move it from its current vertex to an adjacent vertex via an edge. However, you cannot make a move that results in both pieces ending up on the same vertex.\n\nYour goal is to reach the state in which piece A is on vertex T and piece B is on vertex S.\nDetermine whether this is possible, and if it is, find the minimum number of operations required to achieve it.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN M S T\nu_1 v_1\nu_2 v_2\n\\vdots\nu_M v_M\n\nOutput\n\nIf it is impossible to achieve the goal, print -1.\nIf it is possible, print the minimum number of operations required.\n\nConstraints\n\n\n- 2 \\le N \\le 2\\times 10^5\n- \\displaystyle N-1 \\le M \\le \\min\\left(\\frac{N(N-1)}{2},\\,2\\times 10^5\\right)\n- 1 \\le u_i < v_i \\le N\n- The given graph is simple and connected.\n- 1 \\le S, T \\le N\n- S \\neq T\n- All input values are integers.\n\nSample Input 1\n\n4 4 3 4\n2 4\n1 4\n3 4\n2 3\n\nSample Output 1\n\n3\n\nFor example, the following sequence of operations completes the goal in three moves:\n\n- Move piece A to vertex 2.\n- Piece A is on vertex 2, piece B is on vertex 4.\n\n\n- Move piece B to vertex 3.\n- Piece A is on vertex 2, piece B is on vertex 3.\n\n\n- Move piece A to vertex 4.\n- Piece A is on vertex 4, piece B is on vertex 3.\n\n\n\nIt is impossible to complete the goal in fewer than three moves, so print 3.\n\nSample Input 2\n\n2 1 1 2\n1 2\n\nSample Output 2\n\n-1\n\nNo matter how you move the pieces, you cannot achieve the goal.\n\nSample Input 3\n\n5 6 3 5\n1 2\n2 3\n1 5\n2 4\n1 3\n2 5\n\nSample Output 3\n\n4\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc390_f",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc390_f",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Double Sum 3\n\nYou are given an integer sequence A=(A_1,A_2,\\ldots,A_N) of length N.\nFor each integer pair (L,R) with 1 \\le L \\le R \\le N, define f(L,R) as follows:\n\n- Start with an empty blackboard. Write the R-L+1 integers A_L, A_{L+1}, \\ldots, A_R on the blackboard in order.\n- Repeat the following operation until all integers on the blackboard are erased:\n- Choose integers l, r with l \\le r such that every integer from l through r appears at least once on the blackboard. Then, erase all integers from l through r that are on the blackboard.\n\n\n- Let f(L,R) be the minimum number of such operations needed to erase all the integers from the blackboard.\n\nFind \\displaystyle \\sum_{L=1}^N \\sum_{R=L}^N f(L,R).\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\nA_1 A_2 \\ldots A_N\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 1 \\le N \\le 3 \\times 10^5\n- 1 \\le A_i \\le N\n- All input values are integers.\n\nSample Input 1\n\n4\n1 3 1 4\n\nSample Output 1\n\n16\n\nFor example, in the case of (L,R)=(1,4):\n\n- The blackboard has 1,3,1,4.\n- Choose (l,r)=(1,1) and erase all occurrences of 1. The blackboard now has 3,4.\n- Choose (l,r)=(3,4) and erase all occurrences of 3 and 4. The blackboard becomes empty.\n- It cannot be done in fewer than two operations, so f(1,4) = 2.\n\nSimilarly, you can find f(2,4)=2, f(1,1)=1, etc.\n\\displaystyle \\sum_{L=1}^N \\sum_{R=L}^N f(L,R) = 16, so print 16.\n\nSample Input 2\n\n5\n3 1 4 2 4\n\nSample Output 2\n\n23\n\nSample Input 3\n\n10\n5 1 10 9 2 5 6 9 1 6\n\nSample Output 3\n\n129\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

@@ -1,0 +1,15 @@
+{
+ "task_id": "code-lcb-arc194_c",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "arc194_c",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Cost to Flip\n\nYou are given two integer sequences of length N, A = (A_1, A_2, \\ldots, A_N) and B = (B_1, B_2, \\ldots, B_N), each consisting of 0 and 1.\nYou can perform the following operation on A any number of times (possibly zero):\n\n- First, choose an integer i satisfying 1 \\leq i \\leq N, and flip the value of A_i (if the original value is 0, change it to 1; if it is 1, change it to 0).\n- Then, pay \\sum_{k=1}^N A_k C_k yen as the cost of this operation.\n\nNote that the cost calculation in step 2 uses the A after the change in step 1.\nPrint the minimum total cost required to make A identical to B.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\ldots A_N\r\nB_1 B_2 \\ldots B_N\r\nC_1 C_2 \\ldots C_N\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- 1 \\leq N \\leq 2 \\times 10^5\n- A_i, B_i \\in {0, 1}\n- 1 \\leq C_i \\leq 10^6\n- All input values are integers.\n\nSample Input 1\n\n4\r\n0 1 1 1\r\n1 0 1 0\r\n4 6 2 9\n\nSample Output 1\n\n16\r\n\nConsider the following procedure:\n\n- First, flip A_4. Now, A = (0, 1, 1, 0). The cost of this operation is 0 \\times 4 + 1 \\times 6 + 1 \\times 2 + 0 \\times 9 = 8 yen.\n- Next, flip A_2. Now, A = (0, 0, 1, 0). The cost of this operation is 0 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 2 yen.\n- Finally, flip A_1. Now, A = (1, 0, 1, 0), which matches B. The cost of this operation is 1 \\times 4 + 0 \\times 6 + 1 \\times 2 + 0 \\times 9 = 6 yen.\n\nIn this case, the total cost is 8 + 2 + 6 = 16 yen, which is the minimum possible.\n\nSample Input 2\n\n5\r\n1 1 1 1 1\r\n1 1 1 1 1\r\n1 1 1 1 1\n\nSample Output 2\n\n0\r\n\nA and B are already identical initially, so there is no need to perform any operations.\n\nSample Input 3\n\n20\r\n1 1 1 1 0 0 1 1 0 0 0 1 0 1 0 1 1 0 1 0\r\n0 0 0 1 1 1 0 1 1 0 0 0 0 0 0 1 0 1 0 0\r\n52 73 97 72 54 15 79 67 13 55 65 22 36 90 84 46 1 2 27 8\n\nSample Output 3\n\n2867\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500,
+ "batch": "hard2"
+}

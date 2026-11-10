@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP70993780
+Date: 11 Mar 2026
+Subtotal: 7,954.73
+Total: 8,838.59 CNY

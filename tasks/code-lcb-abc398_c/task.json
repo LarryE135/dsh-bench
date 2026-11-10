@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc398_c",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc398_c",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "medium",
+ "platform": "atcoder",
+ "role": "reserve",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Uniqueness\n\nThere are N people, labeled 1 to N. Person i has an integer A_i.\nAmong the people who satisfy the condition \"None of the other N-1 people has the same integer as themselves,\" find the one with the greatest integer, and print that person's label.\nIf no person satisfies the condition, report that fact instead.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\ldots A_N\n\nOutput\n\nIf no person satisfies the condition \"None of the other N-1 people has the same integer as themselves,\" print -1.\nOtherwise, among those who satisfy it, print the label of the person whose integer is the largest.\n\nConstraints\n\n\n- 1 \\leq N \\leq 3\\times 10^5\n- 1 \\leq A_i \\leq 10^9\n- All input values are integers.\n\nSample Input 1\n\n9\r\n2 9 9 7 9 2 4 5 8\n\nSample Output 1\n\n9\r\n\nThose who satisfy the condition are the persons labeled 4, 7, 8, and 9.\r\nTheir integers are 7, 4, 5, and 8, respectively, and the person with the largest integer is the person labeled 9.\r\nThus, the answer is 9.\n\nSample Input 2\n\n4\r\n1000000000 1000000000 998244353 998244353\n\nSample Output 2\n\n-1\r\n\nIf no person satisfies the condition, print -1.\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

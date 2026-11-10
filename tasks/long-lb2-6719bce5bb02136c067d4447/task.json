@@ -1,0 +1,15 @@
+{
+ "task_id": "long-lb2-6719bce5bb02136c067d4447",
+ "dimension": "长任务注意力",
+ "source": "LongBench v2 (zai-org/LongBench-v2, length=short)",
+ "source_id": "6719bce5bb02136c067d4447",
+ "license": "Apache-2.0",
+ "stratum": "hard",
+ "domain": "Long-dialogue History Understanding",
+ "context_chars": 88088,
+ "role": "reserve",
+ "grader": "mcq",
+ "options_shuffled": true,
+ "prompt": "长文阅读题。材料在当前目录的 context.txt（很长，请自己决定怎么读）。\n\n问题：Which player wins the most golds in the game?\n\nA. player_3\nB. player_4\nC. player_7\nD. player_9\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 1200
+}

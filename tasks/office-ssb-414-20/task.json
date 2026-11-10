@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-414-20",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "414-20",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Sheet-Level Manipulation",
+ "role": "main",
+ "grader": "ssb_cells",
+ "answer_sheet": "Sheet1",
+ "answer_position": "'Sheet1'!A4:A18",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nDelete all rows above the first occurrence of the text “Invoice No.” in column A. The macro should search for the phrase (case-insensitive) and delete everything above it, leaving the “Invoice No.” row and all rows below untouched.\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看工作表「Sheet1」的 'Sheet1'!A4:A18 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

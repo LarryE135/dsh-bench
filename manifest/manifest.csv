@@ -1,0 +1,161 @@
+﻿task_id,role,batch,dimension,source,source_id,stratum,grader,license,timeout_s
+code-lcb-3708,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3708,easy,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3733,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3733,hard,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3737,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3737,medium,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3739,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3739,hard,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3744,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3744,hard,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3776,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3776,medium,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3779,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3779,medium,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-3793,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),3793,medium,lcb_functional,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc387_c,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc387_c,medium,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc389_e,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc389_e,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc390_a,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc390_a,easy,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc390_c,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc390_c,medium,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc390_f,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc390_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc390_g,reserve,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc390_g,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc391_e,reserve,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc391_e,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc391_f,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc391_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc393_e,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc393_e,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc393_f,reserve,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc393_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc394_b,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc394_b,easy,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc394_e,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc394_e,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc395_b,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc395_b,easy,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc395_f,reserve,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc395_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc396_b,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc396_b,easy,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc396_f,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc396_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc396_g,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc396_g,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc397_c,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc397_c,medium,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc398_c,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc398_c,medium,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc398_f,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc398_f,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc398_g,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc398_g,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-abc400_a,main,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),abc400_a,easy,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-arc191_d,reserve,base,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),arc191_d,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-arc194_c,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),arc194_c,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-lcb-arc195_b,main,hard2,编程,LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04),arc195_b,hard,lcb_stdio,CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究,1500
+code-poly-javascript-beer-song,reserve,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/beer-song,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-connect,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/connect,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-food-chain,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/food-chain,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-poker,reserve,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/poker,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-promises,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/promises,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-resistor-color-trio,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/resistor-color-trio,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-javascript-tournament,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",javascript/tournament,javascript,polyglot_javascript,MIT（Exercism 各语言 track）,1500
+code-poly-python-book-store,reserve,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/book-store,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-bottle-song,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/bottle-song,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-connect,reserve,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/connect,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-dot-dsl,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/dot-dsl,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-grade-school,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/grade-school,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-grep,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/grep,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-paasio,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/paasio,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-pig-latin,reserve,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/pig-latin,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-pov,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/pov,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-react,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/react,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-rest-api,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/rest-api,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-scale-generator,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/scale-generator,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+code-poly-python-variable-length-quantity,main,base,编程,"Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",python/variable-length-quantity,python,polyglot_python,MIT（Exercism 各语言 track）,1500
+know-mmlupro-10359,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",10359,computer science,mcq,MIT,600
+know-mmlupro-10366,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",10366,computer science,mcq,MIT,600
+know-mmlupro-11576,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",11576,engineering,mcq,MIT,600
+know-mmlupro-11776,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",11776,engineering,mcq,MIT,600
+know-mmlupro-1380,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",1380,law,mcq,MIT,600
+know-mmlupro-1706,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",1706,law,mcq,MIT,600
+know-mmlupro-4128,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",4128,chemistry,mcq,MIT,600
+know-mmlupro-4147,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",4147,chemistry,mcq,MIT,600
+know-mmlupro-4780,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",4780,history,mcq,MIT,600
+know-mmlupro-4936,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",4936,history,mcq,MIT,600
+know-mmlupro-7034,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",7034,economics,mcq,MIT,600
+know-mmlupro-7630,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",7630,economics,mcq,MIT,600
+know-mmlupro-8263,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",8263,math,mcq,MIT,600
+know-mmlupro-8735,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",8735,math,mcq,MIT,600
+know-mmlupro-9164,reserve,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",9164,physics,mcq,MIT,600
+know-mmlupro-9639,main,base,知识,"MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",9639,physics,mcq,MIT,600
+long-chain-10-0,main,base,长任务注意力,自建长链路多步指令,chain/K=10#0,K10,self_chain,自建（CC0）,1800
+long-chain-12-1,main,base,长任务注意力,自建长链路多步指令,chain/K=12#1,K12,self_chain,自建（CC0）,1800
+long-chain-14-2,main,base,长任务注意力,自建长链路多步指令,chain/K=14#2,K14,self_chain,自建（CC0）,1800
+long-chain-15-8,reserve,base,长任务注意力,自建长链路多步指令,chain/K=15#8,K15,self_chain,自建（CC0）,1800
+long-chain-16-3,main,base,长任务注意力,自建长链路多步指令,chain/K=16#3,K16,self_chain,自建（CC0）,1800
+long-chain-18-4,main,base,长任务注意力,自建长链路多步指令,chain/K=18#4,K18,self_chain,自建（CC0）,1800
+long-chain-20-5,main,base,长任务注意力,自建长链路多步指令,chain/K=20#5,K20,self_chain,自建（CC0）,1800
+long-chain-22-9,reserve,base,长任务注意力,自建长链路多步指令,chain/K=22#9,K22,self_chain,自建（CC0）,1800
+long-chain-24-6,main,base,长任务注意力,自建长链路多步指令,chain/K=24#6,K24,self_chain,自建（CC0）,1800
+long-chain-28-7,main,base,长任务注意力,自建长链路多步指令,chain/K=28#7,K28,self_chain,自建（CC0）,1800
+long-chain-32-100,main,hard2,长任务注意力,自建长链路多步指令,chain/K=32#100,K32,self_chain,自建（CC0）,2400
+long-chain-34-104,reserve,hard2,长任务注意力,自建长链路多步指令,chain/K=34#104,K34,self_chain,自建（CC0）,2400
+long-chain-36-101,main,hard2,长任务注意力,自建长链路多步指令,chain/K=36#101,K36,self_chain,自建（CC0）,2400
+long-chain-38-105,reserve,hard2,长任务注意力,自建长链路多步指令,chain/K=38#105,K38,self_chain,自建（CC0）,2400
+long-chain-40-102,main,hard2,长任务注意力,自建长链路多步指令,chain/K=40#102,K40,self_chain,自建（CC0）,2400
+long-chain-44-103,main,hard2,长任务注意力,自建长链路多步指令,chain/K=44#103,K44,self_chain,自建（CC0）,2400
+long-lb2-66ebc95f5a08c7b9b35df497,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ebc95f5a08c7b9b35df497,easy,mcq,Apache-2.0,1200
+long-lb2-66ebd9895a08c7b9b35e0c7c,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ebd9895a08c7b9b35e0c7c,hard,mcq,Apache-2.0,1200
+long-lb2-66ec09ec821e116aacb19620,main,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ec09ec821e116aacb19620,hard,mcq,Apache-2.0,1200
+long-lb2-66ec0f7f821e116aacb19dde,reserve,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ec0f7f821e116aacb19dde,hard,mcq,Apache-2.0,1200
+long-lb2-66ec1db2821e116aacb1ad69,main,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ec1db2821e116aacb1ad69,hard,mcq,Apache-2.0,1200
+long-lb2-66ec7ba6821e116aacb1d114,main,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ec7ba6821e116aacb1d114,hard,mcq,Apache-2.0,1200
+long-lb2-66ece545821e116aacb1dd77,reserve,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ece545821e116aacb1dd77,easy,mcq,Apache-2.0,1200
+long-lb2-66ece958821e116aacb1df04,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ece958821e116aacb1df04,hard,mcq,Apache-2.0,1200
+long-lb2-66ed0cb0821e116aacb1e6c1,reserve,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66ed0cb0821e116aacb1e6c1,hard,mcq,Apache-2.0,1200
+long-lb2-66f284ff821e116aacb29763,reserve,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66f284ff821e116aacb29763,hard,mcq,Apache-2.0,1200
+long-lb2-66f55729821e116aacb3358b,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66f55729821e116aacb3358b,easy,mcq,Apache-2.0,1200
+long-lb2-66f599ef821e116aacb34099,main,hard2,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66f599ef821e116aacb34099,hard,mcq,Apache-2.0,1200
+long-lb2-66f78ecfbb02136c067c2f12,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66f78ecfbb02136c067c2f12,easy,mcq,Apache-2.0,1200
+long-lb2-66f7aa19bb02136c067c327e,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",66f7aa19bb02136c067c327e,hard,mcq,Apache-2.0,1200
+long-lb2-6719bce5bb02136c067d4447,reserve,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",6719bce5bb02136c067d4447,hard,mcq,Apache-2.0,1200
+long-lb2-671b080abb02136c067d4dde,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",671b080abb02136c067d4dde,hard,mcq,Apache-2.0,1200
+long-lb2-671b3cabbb02136c067d5252,main,base,长任务注意力,"LongBench v2 (zai-org/LongBench-v2, length=short)",671b3cabbb02136c067d5252,hard,mcq,Apache-2.0,1200
+long-needle-aggr-L-0,main,base,长任务注意力,自建 RULER 式仓库检索,aggr/L#0,aggr-L,exact_int,自建（CC0）,1500
+long-needle-aggr-L-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,aggr/L#1,aggr-L,exact_int,自建（CC0）,1500
+long-needle-aggr-M-0,main,base,长任务注意力,自建 RULER 式仓库检索,aggr/M#0,aggr-M,exact_int,自建（CC0）,1500
+long-needle-aggr-M-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,aggr/M#1,aggr-M,exact_int,自建（CC0）,1500
+long-needle-aggr-S-0,main,base,长任务注意力,自建 RULER 式仓库检索,aggr/S#0,aggr-S,exact_int,自建（CC0）,1500
+long-needle-aggr-S-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,aggr/S#1,aggr-S,exact_int,自建（CC0）,1500
+long-needle-chain-L-0,main,base,长任务注意力,自建 RULER 式仓库检索,chain/L#0,chain-L,exact_int,自建（CC0）,1500
+long-needle-chain-L-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,chain/L#1,chain-L,exact_int,自建（CC0）,1500
+long-needle-chain-M-0,main,base,长任务注意力,自建 RULER 式仓库检索,chain/M#0,chain-M,exact_int,自建（CC0）,1500
+long-needle-chain-M-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,chain/M#1,chain-M,exact_int,自建（CC0）,1500
+long-needle-chain-S-0,main,base,长任务注意力,自建 RULER 式仓库检索,chain/S#0,chain-S,exact_int,自建（CC0）,1500
+long-needle-chain-S-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,chain/S#1,chain-S,exact_int,自建（CC0）,1500
+long-needle-single-L-0,main,base,长任务注意力,自建 RULER 式仓库检索,single/L#0,single-L,exact_int,自建（CC0）,1500
+long-needle-single-L-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,single/L#1,single-L,exact_int,自建（CC0）,1500
+long-needle-single-M-0,main,base,长任务注意力,自建 RULER 式仓库检索,single/M#0,single-M,exact_int,自建（CC0）,1500
+long-needle-single-M-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,single/M#1,single-M,exact_int,自建（CC0）,1500
+long-needle-single-S-0,main,base,长任务注意力,自建 RULER 式仓库检索,single/S#0,single-S,exact_int,自建（CC0）,1500
+long-needle-single-S-1,reserve,base,长任务注意力,自建 RULER 式仓库检索,single/S#1,single-S,exact_int,自建（CC0）,1500
+office-self-budget-0,main,base,日常办公,自建办公文件任务,o_budget#0,o_budget,self_o_budget,自建（CC0）,1200
+office-self-budget-1,reserve,base,日常办公,自建办公文件任务,o_budget#1,o_budget,self_o_budget,自建（CC0）,1200
+office-self-calendar-0,main,base,日常办公,自建办公文件任务,o_calendar#0,o_calendar,self_o_calendar,自建（CC0）,1200
+office-self-calendar-1,reserve,base,日常办公,自建办公文件任务,o_calendar#1,o_calendar,self_o_calendar,自建（CC0）,1200
+office-self-config-0,main,base,日常办公,自建办公文件任务,o_config#0,o_config,self_o_config,自建（CC0）,1200
+office-self-config-1,reserve,base,日常办公,自建办公文件任务,o_config#1,o_config,self_o_config,自建（CC0）,1200
+office-self-dedupe-0,main,base,日常办公,自建办公文件任务,o_dedupe#0,o_dedupe,self_o_dedupe,自建（CC0）,1200
+office-self-dedupe-1,reserve,base,日常办公,自建办公文件任务,o_dedupe#1,o_dedupe,self_o_dedupe,自建（CC0）,1200
+office-self-invoices-0,main,base,日常办公,自建办公文件任务,o_invoices#0,o_invoices,self_o_invoices,自建（CC0）,1200
+office-self-invoices-1,reserve,base,日常办公,自建办公文件任务,o_invoices#1,o_invoices,self_o_invoices,自建（CC0）,1200
+office-self-logs-0,main,base,日常办公,自建办公文件任务,o_logs#0,o_logs,self_o_logs,自建（CC0）,1200
+office-self-logs-1,reserve,base,日常办公,自建办公文件任务,o_logs#1,o_logs,self_o_logs,自建（CC0）,1200
+office-self-minutes-0,main,base,日常办公,自建办公文件任务,o_minutes#0,o_minutes,self_o_minutes,自建（CC0）,1200
+office-self-minutes-1,reserve,base,日常办公,自建办公文件任务,o_minutes#1,o_minutes,self_o_minutes,自建（CC0）,1200
+office-self-organize-0,main,base,日常办公,自建办公文件任务,o_organize#0,o_organize,self_o_organize,自建（CC0）,1200
+office-self-organize-1,reserve,base,日常办公,自建办公文件任务,o_organize#1,o_organize,self_o_organize,自建（CC0）,1200
+office-self-region-0,main,base,日常办公,自建办公文件任务,o_region#0,o_region,self_o_region,自建（CC0）,1200
+office-self-region-1,reserve,base,日常办公,自建办公文件任务,o_region#1,o_region,self_o_region,自建（CC0）,1200
+office-self-units-0,main,base,日常办公,自建办公文件任务,o_units#0,o_units,self_o_units,自建（CC0）,1200
+office-self-units-1,reserve,base,日常办公,自建办公文件任务,o_units#1,o_units,self_o_units,自建（CC0）,1200
+office-ssb-105-24,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),105-24,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-33722,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),33722,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-374-31,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),374-31,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-37462,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),37462,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-382-29,reserve,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),382-29,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-38969,reserve,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),38969,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-39432,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),39432,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-41-47,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),41-47,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-414-20,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),414-20,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-438-18,reserve,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),438-18,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-47766,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),47766,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-50486,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),50486,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-50916,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),50916,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-50971,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),50971,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-53383,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),53383,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-55085,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),55085,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-57113,reserve,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),57113,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-58109,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),58109,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-585-41,main,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),585-41,Sheet-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200
+office-ssb-59902,reserve,base,日常办公,SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench),59902,Cell-Level Manipulation,ssb_cells,CC BY-SA 4.0,1200

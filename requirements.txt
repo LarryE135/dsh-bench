@@ -1,0 +1,9 @@
+# 跑评测需要（pip install -r requirements.txt）
+openpyxl>=3.1      # 表格题判分、预算题
+pytest>=7          # Python 编程题判分
+pyyaml>=6          # setup 阶段的预设保真检查（preset_fidelity.py）要它，不是「可选」
+matplotlib>=3.7    # 评分卡画图（可选：不画图可以不装）
+
+# 只有「重新从公开数据集构建题库」才需要（build_public.py / build_hard2.py）
+# pandas>=2
+# ijson>=3

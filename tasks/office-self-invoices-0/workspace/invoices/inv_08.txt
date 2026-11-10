@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP14168562
+Date: 8 Jan 2026
+Subtotal: 42,519.29
+Total: 47,243.66 CNY

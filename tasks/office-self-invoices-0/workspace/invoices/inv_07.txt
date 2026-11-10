@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP29355022
+Date: 11 May 2026
+Subtotal: 11,076.89
+Total: 12,307.66 CNY

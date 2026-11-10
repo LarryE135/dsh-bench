@@ -1,0 +1,15 @@
+{
+ "task_id": "code-lcb-abc393_f",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc393_f",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "reserve",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Prefix LIS Query\n\nYou are given a sequence A = (A_1, A_2, \\dots, A_N) of length N.\nAnswer Q queries. The i-th query (1 \\leq i \\leq Q) is as follows:\n\n- You are given integers R_i and X_i. Consider a subsequence (not necessarily contiguous) of (A_1, A_2, \\dots, A_{R_i}) that is strictly increasing and consists only of elements at most X_i. Find the maximum possible length of such a subsequence.\r\nIt is guaranteed that X_i \\geq \\min\\lbrace A_1, A_2,\\dots,A_{R_i} \\rbrace.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN Q\r\nA_1 A_2 \\dots A_N\r\nR_1 X_1\r\nR_2 X_2\r\n\\vdots\r\nR_Q X_Q\n\nOutput\n\nPrint Q lines. The i-th line should contain the answer to the i-th query.\n\nConstraints\n\n\n- 1 \\leq N,Q \\leq 2 \\times 10^5\n- 1 \\leq A_i \\leq 10^9\n- 1 \\leq R_i \\leq N\n- \\min\\lbrace A_1, A_2,\\dots,A_{R_i} \\rbrace\\leq X_i\\leq 10^9\n- All input values are integers.\n\nSample Input 1\n\n5 3\r\n2 4 1 3 3\r\n2 5\r\n5 2\r\n5 3\n\nSample Output 1\n\n2\r\n1\r\n2\r\n\n\n- 1st query: For the sequence (2,4), the longest strictly increasing subsequence with all elements at most 5 has length 2. Specifically, (2,4) qualifies.\n- 2nd query: For the sequence (2,4,1,3,3), the longest strictly increasing subsequence with all elements at most 2 has length 1. Specifically, (2) and (1) qualify.\n- 3rd query: For the sequence (2,4,1,3,3), the longest strictly increasing subsequence with all elements at most 3 has length 2. Specifically, (2,3) and (1,3) qualify.\n\nSample Input 2\n\n10 8\r\n2 5 6 5 2 1 7 9 7 2\r\n7 8\r\n5 2\r\n2 3\r\n2 6\r\n7 3\r\n8 9\r\n9 6\r\n8 7\n\nSample Output 2\n\n4\r\n1\r\n1\r\n2\r\n1\r\n5\r\n3\r\n4\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500,
+ "batch": "hard2"
+}

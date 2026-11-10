@@ -1,0 +1,9 @@
+Hi，上线前请帮我改一下 settings.ini：
+1）server 的端口改成 8167；
+2）生产环境要关掉 debug（写 false）；
+3）database 里那个 legacy_mode 已经没用了，直接删掉这一项；
+4）pool_size 翻倍；
+5）新增一个 [cache] 段，里面 backend = redis，ttl = 120；
+6）mail 段的 sender 键名改成 from_addr，值不变。
+其他都别动，谢谢！
+—— 运维 小周

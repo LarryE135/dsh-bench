@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-1706",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "1706",
+ "license": "MIT",
+ "stratum": "law",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "A defendant was charged with murder. The killing took place on February 1. At the time that the crime occurred, this jurisdiction required a unanimous verdict of all 12 jury members for a conviction on a capital offense. On November 1, the state legislature enacted a new law requiring a majority vote of seven of 12 jurors to convict on a capital offense. The defendant's trial began on December 1. He was subsequently convicted of murder by an eight- to-four vote. Following the trial, the defendant's attorney filed a motion to set aside the verdict. Which of the following would provide the strongest constitutional grounds to overturn the verdict?\n\nA. The Seventh Amendment right to a trial by jury.\nB. The Tenth Amendment's reservation of powers to the states.\nC. The ex post facto clause.\nD. The due process clause of the Fourteenth Amendment.\nE. The Fifth Amendment right against self-incrimination.\nF. The Fourth Amendment protection against unreasonable searches and seizures.\nG. The Sixth Amendment right to a fair trial.\nH. The Eighth Amendment prohibition against cruel and unusual punishment.\nI. The First Amendment right to freedom of speech.\nJ. The contracts clause.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

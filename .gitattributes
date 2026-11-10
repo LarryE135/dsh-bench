@@ -1,0 +1,26 @@
+# 文本：统一 LF；Windows 入口脚本保留 CRLF
+* text=auto
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.csv   text eol=lf
+*.yml   text eol=lf
+*.sh    text eol=lf
+*.bat   text eol=crlf
+*.ps1   text eol=crlf
+
+# 二进制：不要让 git 做行尾/文本处理
+*.bin   binary
+*.xlsx  binary
+*.pdf   binary
+*.jpg   binary
+*.png   binary
+*.zip   binary
+
+# 题目数据必须逐字节一致（check_tasks 比 sha256）：不做行尾归一化。
+# 否则 Windows 检出/提交一次，24 个以上工作簿与 .ics 的哈希就会变。
+tasks/** -text
+
+# 大量任务数据：diff 没有意义
+tasks/** -diff
+bench/leak_allow.json -diff

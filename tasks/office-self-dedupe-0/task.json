@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-dedupe-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_dedupe#0",
+ "stratum": "o_dedupe",
+ "role": "main",
+ "grader": "self_o_dedupe",
+ "prompt": "contacts.csv 是从几个系统导出合并的通讯录，有重复。请生成 contacts_clean.csv（表头 name,email,phone）：邮箱去掉首尾空格并转小写，以邮箱判重，只保留第一次出现的那条，保持原先后顺序；手机号去掉 +86 国家码和所有非数字字符，只留 11 位数字。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

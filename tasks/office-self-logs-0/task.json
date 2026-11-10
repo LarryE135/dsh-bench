@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-logs-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_logs#0",
+ "stratum": "o_logs",
+ "role": "main",
+ "grader": "self_o_logs",
+ "prompt": "access.log 是一天的 Nginx 访问日志。请写 answers.json，包含：top_ips（请求数最多的 3 个 IP，按次数降序，次数相同按 IP 字符串升序），status_5xx（状态码 ≥500 的请求数），busiest_hour（请求最多的小时，两位字符串如 \"09\"；并列时取较早的小时），unique_paths（不计查询参数 ?… 的不同路径数）。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

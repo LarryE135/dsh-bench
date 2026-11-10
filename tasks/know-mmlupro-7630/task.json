@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-7630",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "7630",
+ "license": "MIT",
+ "stratum": "economics",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "The government of a country decides to increase government spending and taxes by the same amount in order to keep a balanced budget. The MPC is 0.75. Which of the following is true of this situation? Policy Direction     Expenditure Multiplier     Tax Multiplier\n\nA. contractionary     4     -3\nB. expansionary     4     3\nC. expansionary    3    -2\nD. contractionary    5    -3\nE. contractionary    3    -2\nF. expansionary    5    -3\nG. contractionary     4     3\nH. expansionary    5    -4\nI. expansionary     4     -3\nJ. contractionary    5    -4\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

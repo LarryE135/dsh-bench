@@ -1,0 +1,2 @@
+# 测试专用覆盖值
+ORDER_SERVICE_TIMEOUT_MS = 5555

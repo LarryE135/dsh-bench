@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP21252241
+Date: 30 Mar 2026
+Subtotal: 19,347.50
+Total: 21,497.22 CNY

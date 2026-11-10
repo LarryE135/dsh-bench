@@ -1,0 +1,65 @@
+name: ci
+
+on:
+  push:
+    branches: [main, master]  # 默认分支是 master，只写 main 会永不触发
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  package:
+    name: 题目包自检
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '${{ matrix.python }}'
+      - name: 安装依赖
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: manifest / tasks / 答案桶一致性
+        run: python bench/check_tasks.py
+      - name: 泄漏自检（题号、答案不该出现在 workspace）
+        run: python bench/leakcheck.py
+      - name: 脚本语法与题单入口
+        run: |
+          python -m py_compile bench/*.py
+          python bench/bench.py manifest | head -5
+
+  selftest:
+    name: 判分器回归
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      # SKIP_JS：JS 题判分要联网装 jest，CI 里跳过（本地跑全量时不要设）
+      - name: 每道题的「标准答案判对 / 空答卷判错」
+        env:
+          SKIP_JS: '1'
+        run: python bench/selftest.py tasks
+
+  selftest-js:
+    name: 判分器回归（含 7 道 JS 题）
+    runs-on: ubuntu-24.04
+    # jest 要联网装一次（约 300 MB），装不上不算失败：这一 job 只补「JS 判分能不能跑」这个观察窗，
+    # 真正的门禁是上面的 selftest（SKIP_JS=1）。
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: python -m pip install --upgrade pip && pip install -r requirements.txt
+      - name: 全量自检（不跳过 JS）
+        run: python bench/selftest.py tasks
+

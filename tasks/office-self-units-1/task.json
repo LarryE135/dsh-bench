@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-units-1",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_units#1",
+ "stratum": "o_units",
+ "role": "reserve",
+ "grader": "self_o_units",
+ "prompt": "products.md 里有一张商品表，重量单位混用了 g、kg、斤（1 斤 = 0.5 kg）和 lb（1 lb = 0.45359237 kg）。请生成 products.csv，表头 sku,weight_kg,price_per_kg：weight_kg 保留 3 位小数，price_per_kg（元/千克）用换算后未经四舍五入的重量计算、结果保留 2 位小数，按 price_per_kg 升序。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

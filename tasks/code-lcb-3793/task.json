@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-3793",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "3793",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "medium",
+ "platform": "leetcode",
+ "role": "main",
+ "grader": "lcb_functional",
+ "func_name": "longestPalindrome",
+ "prompt": "编程题：longest-palindrome-after-substring-concatenation-i\n\nYou are given two strings, s and t.\nYou can create a new string by selecting a substring from s (possibly empty) and a substring from t (possibly empty), then concatenating them in order.\nReturn the length of the longest palindrome that can be formed this way.\n \nExample 1:\n\nInput: s = \"a\", t = \"a\"\nOutput: 2\nExplanation:\nConcatenating \"a\" from s and \"a\" from t results in \"aa\", which is a palindrome of length 2.\n\nExample 2:\n\nInput: s = \"abc\", t = \"def\"\nOutput: 1\nExplanation:\nSince all characters are different, the longest palindrome is any single character, so the answer is 1.\n\nExample 3:\n\nInput: s = \"b\", t = \"aaaa\"\nOutput: 4\nExplanation:\nSelecting \"aaaa\" from t is the longest palindrome, so the answer is 4.\n\nExample 4:\n\nInput: s = \"abcde\", t = \"ecdba\"\nOutput: 5\nExplanation:\nConcatenating \"abc\" from s and \"ba\" from t results in \"abcba\", which is a palindrome of length 5.\n\n \nConstraints:\n\n1 <= s.length, t.length <= 30\ns and t consist of lowercase English letters.\n\n请补全当前目录 solution.py 里已给出的 starter code（LeetCode 风格，类名 Solution，方法 longestPalindrome）。可以 `from typing import *`。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

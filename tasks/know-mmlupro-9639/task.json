@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-9639",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "9639",
+ "license": "MIT",
+ "stratum": "physics",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "The team that wins in a tug-of-war is the team that\n\nA. pushes hardest on the ground\nB. has the most people on the team\nC. pulls the rope towards them the fastest\nD. stands on the side of the rope that is uphill\nE. has the heaviest team members\nF. Neither\nG. yells the loudest\nH. produces more tension in the rope than the opponent\nI. Both\nJ. has the longest rope\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

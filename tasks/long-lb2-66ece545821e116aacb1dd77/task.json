@@ -1,0 +1,15 @@
+{
+ "task_id": "long-lb2-66ece545821e116aacb1dd77",
+ "dimension": "长任务注意力",
+ "source": "LongBench v2 (zai-org/LongBench-v2, length=short)",
+ "source_id": "66ece545821e116aacb1dd77",
+ "license": "Apache-2.0",
+ "stratum": "easy",
+ "domain": "Code Repository Understanding",
+ "context_chars": 544828,
+ "role": "reserve",
+ "grader": "mcq",
+ "options_shuffled": true,
+ "prompt": "长文阅读题。材料在当前目录的 context.txt（很长，请自己决定怎么读）。\n\n问题：In frontend/.env, the developer gives one Vue app API URL https://api.preatlas.dynv6.net/api and an alternative http://localhost:4001. One includes path /api/ but the other doesn't. How this works?\n\nA. D. This is a false example. Such two configurations cannot both work if we don't change other parts of the projet.\nB. C. /api/ is required for routing in this Vue project, specifically in index.js. The service at localhost:4001 somehow added the prefix /api/ during processing.\nC. A. The /api/ is used as a proxy rather than router. The keyword is mutable subject to specific proxy settings, like that of nginx.\nD. B. Using a domain name and path is completely different with using IP address and port. The /api/ path is a standard for better practice and can be used out-of-the-box.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 1200
+}

@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-8735",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "8735",
+ "license": "MIT",
+ "stratum": "math",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "You have a coin and you would like to check whether it is fair or biased. More specifically, let $\\theta$ be the probability of heads, $\\theta = P(H)$. Suppose that you need to choose between the following hypotheses: H_0 (null hypothesis): The coin is fair, i.e. $\\theta = \\theta_0 = 1 / 2$. H_1 (the alternative hypothesis): The coin is not fair, i.e. $\\theta > 1 / 2$. We toss 100 times and observe 60 heads. What is the P-value?\n\nA. 0.115\nB. 0.28\nC. 0.023\nD. 0.157\nE. 0.95\nF. 0.001\nG. 0.5\nH. 0.1\nI. 0.05\nJ. 0.082\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

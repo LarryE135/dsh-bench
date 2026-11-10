@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP15487760
+Date: 20 May 2026
+Subtotal: 8,052.81
+Total: 8,947.57 CNY

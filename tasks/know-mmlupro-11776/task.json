@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-11776",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "11776",
+ "license": "MIT",
+ "stratum": "engineering",
+ "role": "reserve",
+ "grader": "mcq",
+ "prompt": "At a frequency of 4000 kilocycles a parallel-wire transmission line has the following parameters: R = 0.025 ohm/m, L = 2 \\muh/m, G = 0, C = 5.56 \\mu\\muf/m. The line is 100 meters long, terminated in a resistance of 300 ohms. Find the efficiency of transmission, defined as the ratio of the power delivered to the load to the power supplied to the input terminals.\n\nA. 94.2%\nB. 90%\nC. 91.1%\nD. 95%\nE. 98%\nF. 93.7%\nG. 99.5%\nH. 96.5%\nI. 97.3%\nJ. 92%\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-organize-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_organize#0",
+ "stratum": "o_organize",
+ "role": "main",
+ "grader": "self_o_organize",
+ "prompt": "inbox/ 里是一堆从手机和扫描仪导出的文件，文件名里带日期（格式各不相同，注意 DD-MM-YYYY 这种日在前的写法）。请把带日期的文件按日期移动到 inbox/ 下的 YYYY-MM/ 子文件夹（文件名和内容都不要改）；文件名里没有日期的文件留在 inbox/ 原地。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

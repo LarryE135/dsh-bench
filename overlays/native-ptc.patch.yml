@@ -1,0 +1,24 @@
+# ptc 臂（原生 PTC）专用覆盖层（v1.9.1 校准：对齐出厂 `ptc` preset）
+# 来源：DSH 出厂 ptc preset（order 2）。与 headless 出厂组合包的三处真实差异：
+#   1) 工具面：预设里"只挂 tool-executor-ptc、不挂 tool-executor-native"；headless 无法卸载行，
+#      等价做法 = 关原生执行器、开 PTC 执行器（dsh 0.2.2-rc.1 没有 tool-presentation 行，
+#      tools.config.mode 已经失效，不要再用它当判据）。
+#   2) 子代理：与 standard 一样打开 modelSelection / modelDiscovery。
+#   3) 预设停用了 tool-workflow 与 workflow-ptc，headless 出厂是开着的，这里同样停用。
+# 除以上三点外，本臂保持出厂：无 persona 规则、无压缩/裁剪参数改动。
+- id: tool-executor-native
+  disabled: true
+- id: tool-executor-ptc
+  disabled: false
+- id: tool-subagent
+  config:
+    provider: spawn
+    toolName: subagent
+    modelSelection: true
+    modelDiscovery: true
+- id: tool-workflow
+  disabled: true
+- id: workflow-ptc
+  disabled: true
+  config:
+    provider: spawn

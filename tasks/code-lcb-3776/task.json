@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-3776",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "3776",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "medium",
+ "platform": "leetcode",
+ "role": "reserve",
+ "grader": "lcb_functional",
+ "func_name": "minCost",
+ "prompt": "编程题：find-minimum-cost-to-remove-array-elements\n\nYou are given an integer array nums. Your task is to remove all elements from the array by performing one of the following operations at each step until nums is empty:\n\nChoose any two elements from the first three elements of nums and remove them. The cost of this operation is the maximum of the two elements removed.\nIf fewer than three elements remain in nums, remove all the remaining elements in a single operation. The cost of this operation is the maximum of the remaining elements.\n\nReturn the minimum cost required to remove all the elements.\n \nExample 1:\n\nInput: nums = [6,2,8,4]\nOutput: 12\nExplanation:\nInitially, nums = [6, 2, 8, 4].\n\nIn the first operation, remove nums[0] = 6 and nums[2] = 8 with a cost of max(6, 8) = 8. Now, nums = [2, 4].\nIn the second operation, remove the remaining elements with a cost of max(2, 4) = 4.\n\nThe cost to remove all elements is 8 + 4 = 12. This is the minimum cost to remove all elements in nums. Hence, the output is 12.\n\nExample 2:\n\nInput: nums = [2,1,3,3]\nOutput: 5\nExplanation:\nInitially, nums = [2, 1, 3, 3].\n\nIn the first operation, remove nums[0] = 2 and nums[1] = 1 with a cost of max(2, 1) = 2. Now, nums = [3, 3].\nIn the second operation remove the remaining elements with a cost of max(3, 3) = 3.\n\nThe cost to remove all elements is 2 + 3 = 5. This is the minimum cost to remove all elements in nums. Hence, the output is 5.\n\n \nConstraints:\n\n1 <= nums.length <= 1000\n1 <= nums[i] <= 10^6\n\n请补全当前目录 solution.py 里已给出的 starter code（LeetCode 风格，类名 Solution，方法 minCost）。可以 `from typing import *`。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

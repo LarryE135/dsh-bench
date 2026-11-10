@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-8263",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "8263",
+ "license": "MIT",
+ "stratum": "math",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "Find the value of the expression −25 − (−11).\n\nA. -11\nB. −14\nC. 25\nD. 11\nE. 35\nF. 36\nG. 14\nH. 0\nI. -25\nJ. −36\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

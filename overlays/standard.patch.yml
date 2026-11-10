@@ -1,0 +1,12 @@
+# std 臂专用覆盖层（v1.9.1 校准：对齐出厂 `standard` preset）
+# 来源：DSH 出厂 standard preset（order 1）。与 headless 出厂组合包**唯一**的真实差异是这一行：
+# 出厂 standard 预设给子代理工具打开了
+# 模型选择/发现（modelSelection / modelDiscovery），headless base 只带 provider/toolName。
+# 不补这一行，std 臂就不是"标准预设"，而是"少了两个子代理开关的标准预设"。
+# 注意：config 是整块替换，所以 provider/toolName 必须一起写。
+- id: tool-subagent
+  config:
+    provider: spawn
+    toolName: subagent
+    modelSelection: true
+    modelDiscovery: true

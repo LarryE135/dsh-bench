@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-config-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_config#0",
+ "stratum": "o_config",
+ "role": "main",
+ "grader": "self_o_config",
+ "prompt": "按 email.txt 里同事的要求修改当前目录的 settings.ini（直接改原文件）。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

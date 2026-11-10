@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-budget-1",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_budget#1",
+ "stratum": "o_budget",
+ "role": "reserve",
+ "grader": "self_o_budget",
+ "prompt": "expenses.csv 是上半年的报销流水。请生成 budget.xlsx，里面一个名为 Summary 的工作表：A1 写“类别”，B1:G1 依次写 1月..6月，H1 写“合计”；第 2 行起每行一个类别（按类别名的 Unicode 顺序排序），填各月金额和该类别合计；最后一行 A 列写“合计”，填每月合计和总合计。所有金额写成保留两位小数的数值（不要用公式），没有花费的月份写 0。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

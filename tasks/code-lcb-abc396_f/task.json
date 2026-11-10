@@ -1,0 +1,15 @@
+{
+ "task_id": "code-lcb-abc396_f",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc396_f",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Rotated Inversions\n\nYou are given integers N, M and a length-N sequence of non-negative integers A = (A_1, A_2, \\ldots, A_N).\nFor k = 0, 1, \\ldots, M-1, solve the following problem:\n\nDefine an integer sequence B = (B_1, B_2, \\ldots, B_N) so that B_i is the remainder of A_i + k when divided by M. Find the inversion number in B.\n\n\nWhat is the inversion number?\r\nThe inversion number of a sequence (A_1, A_2, \\dots, A_N) is the number of integer pairs (i, j) satisfying 1 \\le i < j \\le N and A_i > A_j.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN M\r\nA_1 A_2 \\ldots A_N\n\nOutput\n\nPrint M lines.\nThe i-th line (1 \\le i \\le M) should contain the answer for the case k = i-1.\n\nConstraints\n\n\n- 1 \\le N,M \\le 2\\times 10^5\n- 0 \\le A_i < M\n- All input values are integers.\n\nSample Input 1\n\n3 3\r\n2 1 0\n\nSample Output 1\n\n3\r\n1\r\n1\r\n\n\n- For k=0: B=(2, 1, 0). The inversion number is 3.\n- For k=1: B=(0, 2, 1). The inversion number is 1.\n- For k=2: B=(1, 0, 2). The inversion number is 1.\n\nSample Input 2\n\n5 6\r\n5 3 5 0 1\n\nSample Output 2\n\n7\r\n3\r\n3\r\n1\r\n1\r\n5\n\nSample Input 3\n\n7 7\r\n0 1 2 3 4 5 6\n\nSample Output 3\n\n0\r\n6\r\n10\r\n12\r\n12\r\n10\r\n6\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500,
+ "batch": "hard2"
+}

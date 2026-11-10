@@ -1,0 +1,22 @@
+# DSH-Bench 公共覆盖层：每个臂都叠加这一层，保证“除了被测变量以外的条件完全一样”。
+# 用法（bench.py 自动加）：dsh --profile <臂的profile> --patch overlays/common.patch.yml [--patch 臂自己的覆盖层] --json "<题面>"
+# 每一条的原因写在旁边；行 id 来自 DSH 0.2.1 的 base 组合包（packages/bundle/base/cordis.patch.yml）。
+
+# 1) “模型请求先经过本机记账代理”不写在这里：bench.py 每个臂另生成一个 route 覆盖层
+#    （runs/_overlays/<臂>_<端口>.route.yml，内容是 llm-deepseek.baseURL: http://127.0.0.1:<端口>/anthropic），
+#    因为端口每个臂不同。命令行覆盖层优先于网页设置里保存的地址。
+
+# 2) 固定被测模型（不受网页里保存的默认模型影响）。
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-flash
+
+# 3) 关闭会话日志上传：它会把整段会话塞进每次请求（最多 8 MiB），影响隐私也影响请求体积。
+- id: session-log-deepseek
+  config:
+    enabled: false
+
+# 4) 不给 agent 联网工具：知识题必须靠模型自己答，且 Search/Fetch 可能按次计费。
+- id: tool-web
+  disabled: true

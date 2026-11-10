@@ -1,0 +1,16 @@
+{
+ "task_id": "long-lb2-66ec7ba6821e116aacb1d114",
+ "dimension": "长任务注意力",
+ "source": "LongBench v2 (zai-org/LongBench-v2, length=short)",
+ "source_id": "66ec7ba6821e116aacb1d114",
+ "license": "Apache-2.0",
+ "stratum": "hard",
+ "domain": "Multi-Document QA",
+ "context_chars": 139087,
+ "role": "main",
+ "grader": "mcq",
+ "options_shuffled": true,
+ "prompt": "长文阅读题。材料在当前目录的 context.txt（很长，请自己决定怎么读）。\n\n问题：If we refer to \"Enhancing Mobile Voice Assistants with WorldGaze\" as Paper 1 and \"Selecting Real-World Objects via User-Perspective Phone Occlusion\" as Paper 2, what are the differences in the implementations for head-gaze method in user studies between these two papers?\n\nA. Paper 1 uses front cameras to track the user's head direction and raycasts it into the 3D world scene captured by the rear camera, so they only uses the smartphone's built-in cameras.\nPaper 2's method refers to the implementation of Paper 1, while they add an extra camera to the phone to accurately measure the ground truth of head orientation.\nB. Paper 1 uses front cameras to track the user's head direction and raycasts it into the 3D world scene captured by the rear camera.\nBut Paper 2 utilizes an occlusion-based method where the phone itself helps determine the selection area, simplifying user interaction by reducing the need for precise head orientation.\nC. Paper 1 uses front cameras to track the user's head direction and raycasts it into the 3D world scene captured by the rear camera.\nBut Paper 2 introduces a different approach where both the front and rear cameras are used to estimate the occlusion area, and then the user's gaze direction can be calculated from the phone's positioning and the occlusion area.\nD. Paper 1 uses front cameras to track the user's head direction and raycasts it into the 3D world scene captured by the rear camera, so they only uses the smartphone's built-in cameras.\nBut Paper 2 employs a head-worn camera to accurately measure the ground truth of head orientation.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 1200,
+ "batch": "hard2"
+}

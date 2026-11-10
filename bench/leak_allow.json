@@ -1,0 +1,150 @@
+{
+ "*": [
+  {
+   "term": "presets",
+   "where": "file:babel.config.js",
+   "reason": "Babel 配置的固定字段名 presets（通用 JS 工具链写法）"
+  },
+  {
+   "term": "preset",
+   "where": "file:babel.config.js",
+   "context": "@babel/preset-env",
+   "reason": "通用 Babel 预设包名"
+  },
+  {
+   "term": "preset",
+   "where": "file:package.json",
+   "context": "@babel/preset-env",
+   "reason": "通用 Babel 预设包名"
+  }
+ ],
+ "code-lcb-abc394_b": [
+  {
+   "term": "atcoder",
+   "where": "prompt",
+   "reason": "题目样例里要拼出的字符串就是 atcoder，属于题目内容"
+  }
+ ],
+ "office-ssb-47766": [
+  {
+   "term": "scorecard",
+   "where": "file:input.xlsx",
+   "reason": "表格里的业务内容（客服 AGENT SCORECARD 表头）"
+  }
+ ],
+ "by_hash": [
+  {
+   "sha256": "898142667ee39ba90695df8412c460b93a5ebd4ae4b59a85171c1dac23da5988",
+   "where": "file:context.txt",
+   "terms": [
+    "arms",
+    "golden",
+    "manifest"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（arms, golden, manifest 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ebc95f5a08c7b9b35df497"
+  },
+  {
+   "sha256": "e10d238d9d394a6f65e28190ec953902611f623c7a063d0dc2350c6bee180a9c",
+   "where": "file:context.txt",
+   "terms": [
+    "benchmark"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（benchmark 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ec0f7f821e116aacb19dde"
+  },
+  {
+   "sha256": "3b3ee1d9018918af0db453e9ba31d64997e0ab029187726ad5ba111a5188b0ee",
+   "where": "file:context.txt",
+   "terms": [
+    "benchmarks",
+    "huggingface",
+    "preset"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（benchmarks, huggingface, preset 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ec1db2821e116aacb1ad69"
+  },
+  {
+   "sha256": "23c48669146d0eac8858c6cd5d7270c125734aed2e92e4bde0a7a35d3957b65d",
+   "where": "file:context.txt",
+   "terms": [
+    "arm",
+    "bench",
+    "calibrated",
+    "calibrations"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（arm, bench, calibrated 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ec7ba6821e116aacb1d114"
+  },
+  {
+   "sha256": "6fb01d54d9cbec849324d518d4d7c235ae45017a8ab35a0f7133d6072b52b4da",
+   "where": "file:context.txt",
+   "terms": [
+    "leak",
+    "preset"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（leak, preset 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ece545821e116aacb1dd77"
+  },
+  {
+   "sha256": "f431ce64d14dbbb1eff48ae89362b266d42bed386187fad3490bd86c4cbd3d48",
+   "where": "file:context.txt",
+   "terms": [
+    "bench"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（bench 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ece958821e116aacb1df04"
+  },
+  {
+   "sha256": "6a6ced54688a4a5b28e27992138b55d42d82668c1f26cd851a273f4f6253bd2a",
+   "where": "file:context.txt",
+   "terms": [
+    "benchmark",
+    "benchmarks",
+    "grading",
+    "scorecard"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（benchmark, benchmarks, grading 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66ed0cb0821e116aacb1e6c1"
+  },
+  {
+   "sha256": "5b40b2e2dc148fb1a267a06839aa18793d3e32eeef94d87fd4f07c275ba4f4af",
+   "where": "file:context.txt",
+   "terms": [
+    "grading"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（grading 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66f284ff821e116aacb29763"
+  },
+  {
+   "sha256": "2fdd6748e1c0bc77770b5aaa6453a5fd91999e1dc3240ecfe497bde2f2869f6c",
+   "where": "file:context.txt",
+   "terms": [
+    "manifest"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（manifest 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66f55729821e116aacb3358b"
+  },
+  {
+   "sha256": "5a78d9e3f8fb603e0b32841ccc39d5a876329054aa57528fe338f5203efd48a9",
+   "where": "file:context.txt",
+   "terms": [
+    "benchmark",
+    "hidden test",
+    "huggingface",
+    "leaderboard"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（benchmark, hidden test, huggingface 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66f599ef821e116aacb34099"
+  },
+  {
+   "sha256": "ce63d39acc72cdd1e680800cb4306aeadfa8164f793297772f681151ffe9cfd3",
+   "where": "file:context.txt",
+   "terms": [
+    "arms",
+    "calibrated",
+    "manifest"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（arms, calibrated, manifest 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66f78ecfbb02136c067c2f12"
+  },
+  {
+   "sha256": "f00ceeeccebfe65360470698e392f755e442074d1ea9099f1c4eb33bc22e77ad",
+   "where": "file:context.txt",
+   "terms": [
+    "benchmarks",
+    "leak"
+   ],
+   "reason": "长文阅读材料（论文/评论原文）里自然出现的普通词（benchmarks, leak 等），不涉及本测试；按文件哈希锁定：文件被改动一个字节，本豁免立即失效，需要重新审定。相关题：long-lb2-66f7aa19bb02136c067c327e"
+  }
+ ]
+}

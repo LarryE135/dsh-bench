@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP11754507
+Date: 30 Jan 2026
+Subtotal: 49,682.82
+Total: 55,203.13 CNY

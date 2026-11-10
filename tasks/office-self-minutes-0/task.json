@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-minutes-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_minutes#0",
+ "stratum": "o_minutes",
+ "role": "main",
+ "grader": "self_o_minutes",
+ "prompt": "minutes.md 是一份会议纪要。请找出其中所有『需要跟进的待办事项』（已完成的、只是讨论没结论的不算），写成 todo.json：一个列表，每项是 {\"owner\": 责任人姓名, \"task\": 简述, \"due\": \"YYYY-MM-DD\"}。年份都按 2026 年。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

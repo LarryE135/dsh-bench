@@ -1,0 +1,15 @@
+{
+ "task_id": "code-poly-javascript-poker",
+ "dimension": "编程",
+ "source": "Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",
+ "source_id": "javascript/poker",
+ "license": "MIT（Exercism 各语言 track）",
+ "stratum": "javascript",
+ "role": "reserve",
+ "grader": "polyglot_javascript",
+ "test_files": [
+  "poker.spec.js"
+ ],
+ "prompt": "# Instructions\n\nPick the best hand(s) from a list of poker hands.\n\nSee [Wikipedia][poker-hands] for an overview of poker hands.\n\n[poker-hands]: https://en.wikipedia.org/wiki/List_of_poker_hands\n\n\n\n请修改当前目录下的 poker.js 完成上述练习，只用标准库（不要新增 npm 依赖）。判分时会放入隐藏的单元测试运行；不要改函数/类名。",
+ "timeout_s": 1500
+}

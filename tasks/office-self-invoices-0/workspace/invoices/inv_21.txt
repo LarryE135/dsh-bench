@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP92686245
+Date: 9 Jan 2026
+Subtotal: 70,548.47
+Total: 78,387.19 CNY

@@ -1,0 +1,12 @@
+{
+ "task_id": "long-chain-28-7",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建长链路多步指令",
+ "source_id": "chain/K=28#7",
+ "stratum": "K28",
+ "role": "main",
+ "grader": "self_chain",
+ "prompt": "这是一个很长的多步骤任务，当前目录已有 notes/、config.json、table.csv、vendor/。开工前先读规矩，整个任务全程都要遵守：\n规矩 1：vendor/ 目录是第三方代码，任何一步都不许修改、移动或删除它里面的文件。\n规矩 2：每完成一步（包括最后两步），就在 progress.log 末尾追加一行 `step N done`（N 是步号），不要有其他内容。\n规矩 3：所有文本文件以换行符结尾；config.json 保持合法 JSON。\n规矩 4：任务结束时 REPORT.md 第一行必须是口令 TPNAYS（只在这里说一次）。\n\n步骤如下（必须严格按顺序执行，后面的步骤可能依赖前面的结果）：\n1. 在 table.csv 末尾追加一行：export,75\n2. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n3. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n4. 在 table.csv 末尾追加一行：gamma,63\n5. 把 config.json 顶层键 mode 设为字符串 \"index\"\n6. 撤销第 5 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 5 步之前的值，原来没有这个键就删掉它）\n7. 把 config.json 里 counters.a 加 1\n8. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n9. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n10. 在 REPORT.md 追加一行 none\n11. 把 config.json 顶层键 region 设为字符串 \"gamma\"\n12. 撤销第 7 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 7 步之前的值，原来没有这个键就删掉它）\n13. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n14. 在 table.csv 末尾追加一行：batch,12\n15. 撤销第 11 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 11 步之前的值，原来没有这个键就删掉它）\n16. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n17. 把 config.json 里 counters.b 加 1\n18. 在 REPORT.md 追加一行 none\n19. 在 REPORT.md 追加一行 none\n20. 在 table.csv 末尾追加一行：retry,58\n21. 把 config.json 里 counters.b 加 2\n22. 把 config.json 顶层键 mode 设为字符串 \"report\"\n23. 新建 notes/export_23.txt，内容为一行：report-381\n24. 在 table.csv 末尾追加一行：handler,88\n25. 把 config.json 里 counters.a 加 12\n26. 把 config.json 顶层键 owner 设为字符串 \"export\"\n27. 在 table.csv 末尾追加一行：render,63\n28. 新建 notes/upper_28.txt，内容是 notes/export_23.txt 当前内容的全大写版本\n29. 清理：删除 notes/ 目录下所有 .tmp 文件（如果有的话）。\n30. 最后，在 REPORT.md 的第一行（最上面）插入口令（见开头规矩 4）。\n全部做完后只回复“完成”。",
+ "timeout_s": 1800
+}

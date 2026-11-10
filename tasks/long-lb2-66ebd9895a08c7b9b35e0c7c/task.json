@@ -1,0 +1,15 @@
+{
+ "task_id": "long-lb2-66ebd9895a08c7b9b35e0c7c",
+ "dimension": "长任务注意力",
+ "source": "LongBench v2 (zai-org/LongBench-v2, length=short)",
+ "source_id": "66ebd9895a08c7b9b35e0c7c",
+ "license": "Apache-2.0",
+ "stratum": "hard",
+ "domain": "Single-Document QA",
+ "context_chars": 149407,
+ "role": "main",
+ "grader": "mcq",
+ "options_shuffled": true,
+ "prompt": "长文阅读题。材料在当前目录的 context.txt（很长，请自己决定怎么读）。\n\n问题：Which of the following is supported by this paper?\n\nA. It is improper to drink at a low age only because it is unhealthy.\nB. There is no evidence that lower minimum drinking age can result in lower death rate.\nC. Samuelson rule is not mentioned in this paper.\nD. Samuelson rule is challenging to apply so the authors use a more tractable question and maintain internal validity of results.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 1200
+}

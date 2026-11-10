@@ -1,0 +1,15 @@
+{
+ "task_id": "office-ssb-57113",
+ "dimension": "日常办公",
+ "source": "SpreadsheetBench Verified-400 (KAKA22/SpreadsheetBench)",
+ "source_id": "57113",
+ "license": "CC BY-SA 4.0",
+ "stratum": "Cell-Level Manipulation",
+ "role": "reserve",
+ "grader": "ssb_cells",
+ "answer_sheet": null,
+ "answer_position": "B2:C3",
+ "ext": "xlsx",
+ "prompt": "日常办公·表格任务。当前目录有 input.xlsx。需求如下：\n\nI am working with Twitter data and attempting to create a new Excel column that extracts all hashtags from each tweet. While I can successfully use a formula to pull the first hashtag from a cell, I am struggling to modify it or use another method to extract multiple hashtags from cells that contain more than one. Additionally, I want to output these hashtags in adjacent cells starting from column B, without the # symbol and without any changes to the header row. An example file has been provided. Modify my current formula to achieve this.\n\nMy current formula is: TRIM(LEFT(SUBSTITUTE(MID(A2,FIND(\"#\",A2),LEN(A2)),\" \",REPT(\" \",100)),100))\n\n请把处理后的工作簿另存为当前目录的 output.xlsx（保留其它内容不变）。判分只看B2:C3 区域的单元格值，所以请把结果写成具体数值/文本（如用公式，确保保存了计算结果）。",
+ "timeout_s": 1200
+}

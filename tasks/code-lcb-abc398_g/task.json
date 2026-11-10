@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc398_g",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc398_g",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "reserve",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Not Only Tree Game\n\nYou are given a simple undirected graph with N vertices and M edges, with vertices labeled 1 to N and edges labeled 1 to M. The i-th edge connects vertices U_i and V_i. Initially, G does not contain an odd cycle.\nTakahashi and Aoki will play a game using this graph G. With Aoki going first, they take turns performing the following operation:\n\n- Choose a pair of integers (i,j) with 1 \\leq i < j \\leq N that satisfies both of the following conditions, then add an edge connecting vertices i and j to G.\n- G does not already have an edge connecting vertices i and j.\n- Adding an edge connecting vertices i and j does not create an odd cycle.\n\n\n\nA player who cannot perform this operation loses, and the other player wins.\nDetermine who wins when both players play optimally.\n\nWhat is an odd cycle?\nA sequence of vertices (v_0,v_1,\\ldots,v_k) of G is called an odd cycle if and only if all of the following conditions are satisfied:\n\n- k is odd.\n- v_0=v_k.\n- For every 1\\leq i \\leq k, there is an edge connecting v_{i-1} and v_{i}.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN M\nU_1 V_1\nU_2 V_2\n\\vdots\nU_M V_M\n\nOutput\n\nIf Aoki (the first player) wins, print Aoki; otherwise, if Takahashi (the second player) wins, print Takahashi.\n\nConstraints\n\n\n- 1 \\leq N \\leq 2\\times 10^5\n- 0 \\leq M \\leq 2\\times 10^5\n- 1 \\leq U_i < V_i \\leq N\n- The given graph does not contain an odd cycle.\n- The given graph does not contain multi-edges.\n- All input values are integers.\n\nSample Input 1\n\n4 3\n1 2\n2 3\n3 4\n\nSample Output 1\n\nAoki\n\nIf Aoki (the first player) adds the edge (1,4), Takahashi (the second player) cannot move. Thus, Aoki wins.\n\nSample Input 2\n\n4 2\n1 2\n3 4\n\nSample Output 2\n\nTakahashi\n\nNo matter how Aoki plays, Takahashi wins.\n\nSample Input 3\n\n9 5\n2 9\n2 3\n4 6\n5 7\n1 8\n\nSample Output 3\n\nAoki\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

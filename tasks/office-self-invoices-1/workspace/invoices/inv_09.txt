@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP25182497
+Date: 13 Apr 2026
+Subtotal: 81,127.03
+Total: 90,141.14 CNY

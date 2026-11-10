@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP80579485
+Date: 3 Jan 2026
+Subtotal: 79,913.33
+Total: 88,792.59 CNY

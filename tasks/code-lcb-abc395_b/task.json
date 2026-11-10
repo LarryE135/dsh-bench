@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc395_b",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc395_b",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "easy",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Make Target\n\nOverview: Create an N \\times N pattern as follows.\n\n###########\n#.........#\n#.#######.#\n#.#.....#.#\n#.#.###.#.#\n#.#.#.#.#.#\n#.#.###.#.#\n#.#.....#.#\n#.#######.#\n#.........#\n###########\n\n\nYou are given a positive integer N.\nConsider an N \\times N grid. Let (i,j) denote the cell at the i-th row from the top and the j-th column from the left. Initially, no cell is colored.\nThen, for i = 1,2,\\dots,N in order, perform the following operation:\n\n- Let j = N + 1 - i.\n- If i \\leq j, fill the rectangular region whose top-left cell is (i,i) and bottom-right cell is (j,j) with black if i is odd, or white if i is even. If some cells are already colored, overwrite their colors.  \n- If i > j, do nothing.\n\nAfter all these operations, it can be proved that there are no uncolored cells. Determine the final color of each cell.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\n\nOutput\n\nPrint N lines. The i-th line should contain a length-N string S_i representing the colors of the i-th row of the grid after all operations, as follows:\n\n- If cell (i,j) is finally colored black, the j-th character of S_i should be #.\n- If cell (i,j) is finally colored white, the j-th character of S_i should be ..\n\nConstraints\n\n\n- 1 \\leq N \\leq 50\n- All input values are integers.\n\nSample Input 1\n\n11\n\nSample Output 1\n\n###########\n#.........#\n#.#######.#\n#.#.....#.#\n#.#.###.#.#\n#.#.#.#.#.#\n#.#.###.#.#\n#.#.....#.#\n#.#######.#\n#.........#\n###########\n\nThis matches the pattern shown in the Overview.\n\nSample Input 2\n\n5\n\nSample Output 2\n\n#####\n#...#\n#.#.#\n#...#\n#####\n\nColors are applied as follows, where ? denotes a cell not yet colored:\n         i=1      i=2      i=3      i=4      i=5\n?????    #####    #####    #####    #####    #####\n?????    #####    #...#    #...#    #...#    #...#\n????? -> ##### -> #...# -> #.#.# -> #.#.# -> #.#.#\n?????    #####    #...#    #...#    #...#    #...#\n?????    #####    #####    #####    #####    #####\n\nSample Input 3\n\n8\n\nSample Output 3\n\n########\n#......#\n#.####.#\n#.#..#.#\n#.#..#.#\n#.####.#\n#......#\n########\n\nSample Input 4\n\n2\n\nSample Output 4\n\n##\n##\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

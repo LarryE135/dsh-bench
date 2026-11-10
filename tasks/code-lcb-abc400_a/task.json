@@ -1,0 +1,14 @@
+{
+ "task_id": "code-lcb-abc400_a",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc400_a",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "easy",
+ "platform": "atcoder",
+ "role": "main",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：ABC400 Party\n\nIn the ceremony commemorating ABC400, we want to arrange 400 people in a rectangular formation of A rows and B columns without any gaps.\nYou are given a positive integer A. Print the value of a positive integer B for which such an arrangement is possible. If there is no such positive integer B, print -1.\n\nInput\n\nThe input is given from Standard Input in the following format:\nA\n\nOutput\n\nPrint the value of B or -1 as specified by the problem statement.\n\nConstraints\n\n\n- A is an integer between 1 and 400, inclusive.\n\nSample Input 1\n\n10\n\nSample Output 1\n\n40\r\n\nWe can arrange 400 people in 10 rows and 40 columns.\n\nSample Input 2\n\n11\n\nSample Output 2\n\n-1\n\nSample Input 3\n\n400\n\nSample Output 3\n\n1\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500
+}

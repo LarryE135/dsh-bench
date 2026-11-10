@@ -1,0 +1,5 @@
+INVOICE
+Invoice No: FP15654343
+Date: 4 Jul 2026
+Subtotal: 2,776.64
+Total: 3,085.15 CNY

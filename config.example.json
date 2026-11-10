@@ -1,0 +1,150 @@
+{
+  "_说明": "bench.py 第一次运行时会把本文件复制成 config.json。默认两臂（std / ptc），每臂 3 遍、2 个并行槽。",
+  "model": "deepseek-v4.1-flash",
+  "llm_provider": "wb",
+  "_llm_provider说明": "deepseek = llm-deepseek（Anthropic 协议，官方 api.deepseek.com/anthropic）；wb = llm-pi-ai（OpenAI 兼容，本机 WB Proxy，配合 upstream=http://127.0.0.1:8788、model/version 用网关的模型名）",
+  "model_version_expected": "DeepSeek-V4.1-Flash-1017",
+  "dsh_version_pin": "0.2.2-rc.1",
+  "dsh_command": null,
+  "_dsh_command说明": "null = 自动找 dsh（Windows 上自动改用 node 直接调入口 JS，避免 .cmd 截断多行题面）。找不到时手写，例如 [\"node\", \"C:/.../dsh/bin/dsh.js\"]",
+  "permission_mode": "danger-full-access",
+  "_permission_mode说明": "headless 没有审批通道，workspace-write 模式下遇到需要确认的操作会卡住；与插件仓库 ab-run.sh 的做法一致",
+  "isolation": "env",
+  "_isolation说明": "env = 软隔离 + 断网变量（Windows/macOS/Linux 都能用，默认）；docker = 严格模式：DSH 跑在只挂载本题目录、只能连记账代理的容器里（需要 Docker；容器里是 Linux）",
+  "work_root": null,
+  "_work_root说明": "null = <系统临时目录>/w。每次运行在这里建一个随机 ID 命名的工作目录，名字里不含任何测试信息",
+  "state_root": null,
+  "_state_root说明": "null = ~/.local/share/wh-state。本次运行的会话/存储目录。刻意不放在 <临时目录> 里：env 模式读权限不受限，若和 <临时目录>/w/<ID> 并排，agent 顺手上翻就能看到别的运行的会话",
+  "dsh_home": null,
+  "_dsh_home说明": "null = ~/.local/share/wh。评测专用的 DSH_HOME：不碰你平时的 DSH 会话、技能和设置；setup 会把你的 API Key 文件复制过来",
+  "block_network_env": true,
+  "upstream": "http://127.0.0.1:8788",
+  "common_patches": [
+    "overlays/common.patch.yml"
+  ],
+  "_arms说明": "两臂：std = 出厂 standard preset（基线）；ptc = 出厂 ptc preset（原生 PTC 工具面）。两臂只差工具面，其余参数一致，差值就是『只换工具面』的净效果。",
+  "arms": {
+    "std": {
+      "profile": null,
+      "plugins": [],
+      "patches": [
+        "overlays/standard.patch.yml"
+      ],
+      "proxy_port": 8701,
+      "preset": "standard",
+      "expect": {
+        "rules": 0,
+        "ptc": false,
+        "mustHave": {
+          "tool-subagent": "modelSelection: true"
+        },
+        "mustNot": {
+          "compaction-basic": "thresholdRatio"
+        },
+        "toolsAny": [
+          "read",
+          "glob",
+          "grep",
+          "pwsh",
+          "bash",
+          "write",
+          "edit"
+        ],
+        "toolsNone": [
+          "run_code"
+        ]
+      },
+      "说明": "出厂 standard preset（order 1）：0 条 persona 规则、原生执行器、官方 read/glob/grep/write。唯一补丁是子代理的 modelSelection/modelDiscovery（保真检查发现 headless base 缺这两项）",
+      "enabled": true
+    },
+    "ptc": {
+      "profile": null,
+      "plugins": [],
+      "patches": [
+        "overlays/native-ptc.patch.yml"
+      ],
+      "proxy_port": 8702,
+      "preset": "ptc",
+      "expect": {
+        "rules": 0,
+        "ptc": true,
+        "mustHave": {
+          "tool-subagent": "modelSelection: true",
+          "tool-workflow": "disabled: true"
+        },
+        "mustNot": {
+          "compaction-basic": "thresholdRatio"
+        },
+        "toolsAny": [
+          "run_code"
+        ],
+        "toolsNone": [
+          "read"
+        ]
+      },
+      "说明": "出厂 ptc preset（order 2）：只换工具面（run_code），无规则、压缩/裁剪参数保持出厂；预设停用的 workflow 两行在这里同样停用",
+      "enabled": true
+    }
+  },
+  "smoke_tasks": [
+    "know-mmlupro-8263",
+    "long-needle-single-S-0"
+  ],
+  "pre_repeats": 2,
+  "stages": {
+    "stage1": {
+      "arms": [
+        "std",
+        "ptc"
+      ],
+      "rep_from": 0,
+      "rep_to": 5,
+      "slots_per_arm": 2,
+      "_说明": "两臂各 3 遍（2 × 110 题 × 3 = 660 次）。想更快可把 slots_per_arm 提到 3。",
+      "_rep_to说明": "5 遍不是拍脑袋：bench/sample_size.py --sims 400 实测 margin=5 时 r=3 的把握只有 0.38，r=5 才到 0.57；r=3 会让「未能证明非劣效」几乎不含信息（真实 Δ=0 也有 62% 概率报这句）。赶时间可以用 --only 只补某几题。"
+    },
+    "stage2": {
+      "arms": [
+        "std",
+        "ptc"
+      ],
+      "rep_from": 3,
+      "rep_to": 6,
+      "slots_per_arm": 2,
+      "_说明": "补到 6 遍；仍不收敛就把 rep_to 改成 10 再跑同一条命令（断点续跑只补缺的）。"
+    }
+  },
+  "margin": 5,
+  "seed": 20261103,
+  "_profile说明": "各臂 profile 名为 null 时由 setup 随机生成中性名字（如 p3fa91c），映射只存在 runs/_setup/profiles.json",
+  "stagger_arms": 3,
+  "grading": "after",
+  "_grading说明": "测试与评分隔离（v1.9）。after = 整段作答全部结束后再统一评分（推荐）；manual = 只作答不评分，之后运行 grade（可换一台工具齐全的机器评）；inline = 旧行为，每题跑完马上评。after/manual 时答卷一律挪到 runs/_logs/<ID>/work 存档。",
+  "keep_workdirs": "move",
+  "_stagger_arms说明": "true = 各臂在同一随机题序上错开起点，避免四个臂同一时刻做同一道题（能在隔壁目录看到彼此答卷、相同前缀互相预热缓存）",
+  "_keep_workdirs说明": "move = 判完分把工作目录挪到 runs/_logs/<ID>/work（推荐）；delete = 直接删；keep = 留在原地（不推荐：后面的运行能在隔壁看到）",
+  "currency": "CNY",
+  "pricing_cny_per_mtok": {
+    "_来源": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing （2026-11-04 抓取，deepseek-flash）",
+    "_口径": "元/百万 tokens，一律按高峰价从 token 重算（空闲时段是半价），避免某个臂恰好跑在半价时段占便宜",
+    "cache_hit": 0.04,
+    "cache_miss": 2,
+    "output": 8,
+    "off_peak_factor": 0.5
+  },
+  "_上游说明": "默认走 WB Proxy（本机 127.0.0.1:8788）。若要改走官方渠道：llm_provider=deepseek、model=deepseek-flash、upstream=https://api.deepseek.com，并配置 DEEPSEEK_API_KEY。",
+  "platform_label": null,
+  "env": {
+    "ELECTRON_RUN_AS_NODE": "1"
+  },
+  "_env说明": "本机 DSH 是桌面客户端的 asar 内置 CLI：必须用 Electron 二进制以 node 身份运行（对应 dsh.cmd 里的 ELECTRON_RUN_AS_NODE=1），否则会拉起 GUI。",
+  "_calibration": "v1.9.1 校准：并发上限、供应商熔断、记账代理、配对统计口径（见 docs/流程-校准.md）。",
+  "provider_retry": 3,
+  "provider_health_probes": 3,
+  "provider_probe_s": 30,
+  "provider_fail_threshold": 3,
+  "adaptive_slots": true,
+  "max_parallel": 6,
+  "_provider说明": "v1.9.2（2026-11-07 事故后新增）：max_parallel=全局并发上限（四个槽同时跑；另有 9 个槽线程排队，保证每臂 3 遍各占一个文件）；provider_retry=遇到供应商 503/429 时的运行内重试次数（30/90/180 秒退避、每次换干净工作目录）；provider_probe_s=熔断探测间隔；provider_fail_threshold=连续几次探测失败就暂停所有槽；provider_health_probes=开跑前要连续几次探测通过；adaptive_slots=最近 10 分钟供应商错误率>20% 时自动把并发减半。",
+  "slot_shards": 2
+}

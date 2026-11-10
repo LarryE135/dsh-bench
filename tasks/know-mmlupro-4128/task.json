@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-4128",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "4128",
+ "license": "MIT",
+ "stratum": "chemistry",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "a)It is desired to make nylon (66) withM_n_ = 20000. Assuming that the reaction goes to completion, find [{F_A (0)} / {F_B (0)}]. b)What weight fraction of the product will have a degree of polymerization of 200.\n\nA. 0.9887, 0.00366\nB. 0.9500, 0.00095\nC. 0.9765, 0.00123\nD. 0.9912, 0.00234\nE. 1.0000, 0.00500\nF. 0.9950, 0.00100\nG. 0.9845, 0.00456\nH. 0.9800, 0.00400\nI. 0.9700, 0.00600\nJ. 0.9650, 0.00250\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

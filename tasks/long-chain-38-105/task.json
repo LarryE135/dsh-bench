@@ -1,0 +1,13 @@
+{
+ "task_id": "long-chain-38-105",
+ "license": "自建（CC0）",
+ "dimension": "长任务注意力",
+ "source": "自建长链路多步指令",
+ "source_id": "chain/K=38#105",
+ "stratum": "K38",
+ "role": "reserve",
+ "grader": "self_chain",
+ "prompt": "这是一个很长的多步骤任务，当前目录已有 notes/、config.json、table.csv、vendor/。开工前先读规矩，整个任务全程都要遵守：\n规矩 1：vendor/ 目录是第三方代码，任何一步都不许修改、移动或删除它里面的文件。\n规矩 2：每完成一步（包括最后两步），就在 progress.log 末尾追加一行 `step N done`（N 是步号），不要有其他内容。\n规矩 3：所有文本文件以换行符结尾；config.json 保持合法 JSON。\n规矩 4：任务结束时 REPORT.md 第一行必须是口令 YHDJRC（只在这里说一次）。\n\n步骤如下（必须严格按顺序执行，后面的步骤可能依赖前面的结果）：\n1. 把 config.json 里 counters.a 加 15\n2. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n3. 在 table.csv 末尾追加一行：order,75\n4. 把 config.json 顶层键 region 设为字符串 \"cache\"\n5. 在 table.csv 末尾追加一行：export,56\n6. 新建 notes/order_6.txt，内容为一行：cache-937\n7. 在 table.csv 末尾追加一行：route,63\n8. 把 config.json 里 counters.a 加 12\n9. 把 config.json 顶层键 region 设为字符串 \"order\"\n10. 把第 6 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n11. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n12. 把 config.json 里 counters.b 加 3\n13. 撤销第 9 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 9 步之前的值，原来没有这个键就删掉它）\n14. 把第 6 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n15. 新建 notes/delta_15.txt，内容为一行：index-98\n16. 把 notes/ 下当前 .txt 文件的个数（整数）写到 config.json 的 totals.notes\n17. 把 notes/order_6.txt 重命名为 notes/renamed_17.txt\n18. 把 config.json 里 counters.a 加 11\n19. 撤销第 12 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 12 步之前的值，原来没有这个键就删掉它）\n20. 把第 15 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n21. 把第 15 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n22. 把第 15 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n23. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n24. 把 table.csv 中 qty 列当前的总和写到 config.json 的 totals.qty\n25. 新建 notes/upper_25.txt，内容是 notes/renamed_17.txt 当前内容的全大写版本\n26. 把 notes/ 下当前 .txt 文件的个数（整数）写到 config.json 的 totals.notes\n27. 撤销第 18 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 18 步之前的值，原来没有这个键就删掉它）\n28. 把第 6 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n29. 把 config.json 里 counters.a 加 1\n30. 新建 notes/upper_30.txt，内容是 notes/renamed_17.txt 当前内容的全大写版本\n31. 新建 notes/export_31.txt，内容为一行：token-281\n32. 删除 notes/upper_25.txt\n33. 新建 notes/upper_33.txt，内容是 notes/upper_30.txt 当前内容的全大写版本\n34. 删除 notes/upper_30.txt\n35. 把 config.json 里 counters.b 加 4\n36. 删除 notes/delta_15.txt\n37. 把第 6 步新建的那个文件的文件名（不带路径）单独一行追加到 REPORT.md\n38. 撤销第 29 步对 config.json 做的修改（若是加数就减回去；若是设置键，则恢复成第 29 步之前的值，原来没有这个键就删掉它）\n39. 清理：删除 notes/ 目录下所有 .tmp 文件（如果有的话）。\n40. 最后，在 REPORT.md 的第一行（最上面）插入口令（见开头规矩 4）。\n全部做完后只回复“完成”。",
+ "timeout_s": 2400,
+ "batch": "hard2"
+}

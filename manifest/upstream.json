@@ -1,0 +1,121 @@
+{
+ "说明": "这里只列「用过但不随仓库发布」的第三方题目：给题号、数据集与修订号，方便任何人自己抓回来复核；题面、选项、答案都不在仓库里（C-Eval 是 CC BY-NC-SA 4.0：再分发与商用都受限）。",
+ "providers": {
+  "ceval": {
+   "dataset": "ceval/ceval-exam",
+   "revision": "617524a00b307ff6f9933702f724131fe12ca7ce",
+   "url": "https://huggingface.co/datasets/ceval/ceval-exam",
+   "license": "CC BY-NC-SA 4.0",
+   "fetch": "python bench/fetch_data.py --provider ceval",
+   "source_label": "C-Eval Hard 子集 (ceval/ceval-exam, val)",
+   "api": "https://datasets-server.huggingface.co/rows",
+   "row_key": "id"
+  }
+ },
+ "tasks": [
+  {
+   "task_id": "know-ceval-advanced_mathematics-val-10",
+   "provider": "ceval",
+   "source_id": "advanced_mathematics/val/10",
+   "subject": "advanced_mathematics",
+   "row_id": 10,
+   "stratum": "advanced_mathematics",
+   "role": "reserve",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "37aabd7de60d876cb44a653e6455161406a05e839ef26573b930dd47ae6c861e"
+  },
+  {
+   "task_id": "know-ceval-advanced_mathematics-val-15",
+   "provider": "ceval",
+   "source_id": "advanced_mathematics/val/15",
+   "subject": "advanced_mathematics",
+   "row_id": 15,
+   "stratum": "advanced_mathematics",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "49c1bdf2767d718002fa53d0f6e45f5086a5dbd51a95d424d45de3d0acc99d2b"
+  },
+  {
+   "task_id": "know-ceval-advanced_mathematics-val-5",
+   "provider": "ceval",
+   "source_id": "advanced_mathematics/val/5",
+   "subject": "advanced_mathematics",
+   "row_id": 5,
+   "stratum": "advanced_mathematics",
+   "role": "reserve",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "2bf215919fa5ae93894c3e02eb6cb7f8b482ead4d79586fc9163aada39376758"
+  },
+  {
+   "task_id": "know-ceval-discrete_mathematics-val-3",
+   "provider": "ceval",
+   "source_id": "discrete_mathematics/val/3",
+   "subject": "discrete_mathematics",
+   "row_id": 3,
+   "stratum": "discrete_mathematics",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "25cdb930d03be5e041dc499956438ee2c4c90aa5aac2d56d0ebeb8d60707a6d2"
+  },
+  {
+   "task_id": "know-ceval-high_school_chemistry-val-10",
+   "provider": "ceval",
+   "source_id": "high_school_chemistry/val/10",
+   "subject": "high_school_chemistry",
+   "row_id": 10,
+   "stratum": "high_school_chemistry",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "24a087d9c01be5cc620b73dfaa1bf9a5c9a8490f51ba137cf19d6a7e9474b5d1"
+  },
+  {
+   "task_id": "know-ceval-high_school_chemistry-val-13",
+   "provider": "ceval",
+   "source_id": "high_school_chemistry/val/13",
+   "subject": "high_school_chemistry",
+   "row_id": 13,
+   "stratum": "high_school_chemistry",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "af72929bd9587a81a4f85b465c53e8dd2db889663d4a8363cbf7d4b20749ee1f"
+  },
+  {
+   "task_id": "know-ceval-high_school_mathematics-val-16",
+   "provider": "ceval",
+   "source_id": "high_school_mathematics/val/16",
+   "subject": "high_school_mathematics",
+   "row_id": 16,
+   "stratum": "high_school_mathematics",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "ab0ed0e71a3d94bc2951bd3fa92afb02f13b305458a346b4d576e4452d20e4d2"
+  },
+  {
+   "task_id": "know-ceval-high_school_physics-val-13",
+   "provider": "ceval",
+   "source_id": "high_school_physics/val/13",
+   "subject": "high_school_physics",
+   "row_id": 13,
+   "stratum": "high_school_physics",
+   "role": "main",
+   "grader": "mcq",
+   "dimension": "知识",
+   "timeout_s": 600,
+   "task_json_sha256": "e52c30edf5a0ec21b2d50eacdf01106dbe7d8cc488081a2a9f08f5d12bddbca2"
+  }
+ ]
+}

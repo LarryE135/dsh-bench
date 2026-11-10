@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-invoices-1",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_invoices#1",
+ "stratum": "o_invoices",
+ "role": "reserve",
+ "grader": "self_o_invoices",
+ "prompt": "invoices/ 目录里有 25 张格式不一的发票文本。请提取每张的发票号码、开票日期、价税合计（总金额，不是小计或税额），写到 invoices.csv，表头 invoice_no,date,total；日期统一成 YYYY-MM-DD，金额去掉千分位并保留两位小数；按日期升序、同日按号码升序。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

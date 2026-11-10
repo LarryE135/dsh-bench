@@ -1,0 +1,12 @@
+{
+ "task_id": "know-mmlupro-10359",
+ "dimension": "知识",
+ "source": "MMLU-Pro (TIGER-Lab/MMLU-Pro, test)",
+ "source_id": "10359",
+ "license": "MIT",
+ "stratum": "computer science",
+ "role": "main",
+ "grader": "mcq",
+ "prompt": "Which of the following is NOT a property of bitmap graphics?\n\nA. They can support millions of colors\nB. Realistic lighting and shading can be done.\nC. Bitmaps can be made transparent\nD. Fast hardware exists to move blocks of pixels efficiently.\nE. Bitmap graphics can be created in multiple layers\nF. All line segments can be displayed as straight.\nG. Polygons can be filled with solid colors and textures.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 600
+}

@@ -1,0 +1,12 @@
+{
+ "task_id": "office-self-calendar-0",
+ "license": "自建（CC0）",
+ "dimension": "日常办公",
+ "source": "自建办公文件任务",
+ "source_id": "o_calendar#0",
+ "stratum": "o_calendar",
+ "role": "main",
+ "grader": "self_o_calendar",
+ "prompt": "events.ics 是下周的日程。请找出所有时间重叠的会议对（首尾刚好相接不算重叠），写入 conflicts.txt：每行一对 UID，形如 EV03,EV11（行内小的在前），各行按字符串升序，没有其它内容。\n只用当前目录里的文件，不要联网。",
+ "timeout_s": 1200
+}

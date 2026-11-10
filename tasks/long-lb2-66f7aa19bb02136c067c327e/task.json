@@ -1,0 +1,15 @@
+{
+ "task_id": "long-lb2-66f7aa19bb02136c067c327e",
+ "dimension": "长任务注意力",
+ "source": "LongBench v2 (zai-org/LongBench-v2, length=short)",
+ "source_id": "66f7aa19bb02136c067c327e",
+ "license": "Apache-2.0",
+ "stratum": "hard",
+ "domain": "Multi-Document QA",
+ "context_chars": 153559,
+ "role": "main",
+ "grader": "mcq",
+ "options_shuffled": true,
+ "prompt": "长文阅读题。材料在当前目录的 context.txt（很长，请自己决定怎么读）。\n\n问题：What are the differences between Jump Over ASLR and BunnyHop-Reload in inferring collisions in the BTB?\n\nA. Jump Over ASLR infers collisions by measuring the execution time of the victim and spy process, while BunnyHop-Reload does so by measuring whether the target is prefetched into the cache.\nB. Jump Over ASLR infers collisions by measuring the execution time of the spy process, while BunnyHop-Reload does so by  executing some NOP instructions.\nC. Jump Over ASLR infers collisions by measuring the execution time of the victim and spy process, while BunnyHop-Reload does so by measuring the execution time of a code block containing many NOP instructions.\nD. Jump Over ASLR infers collisions by measuring the execution time of the jump instruction code block in the spy process, while BunnyHop-Reload does so by determining whether the target is prefetched into the cache.\n\n请把你的最终答案只写一个大写选项字母（例如 B），保存到当前目录的 ANSWER.txt。不要联网搜索。",
+ "timeout_s": 1200
+}

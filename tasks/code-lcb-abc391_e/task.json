@@ -1,0 +1,15 @@
+{
+ "task_id": "code-lcb-abc391_e",
+ "dimension": "编程",
+ "source": "LiveCodeBench code_generation_lite release_v6 (2025-01~2025-04)",
+ "source_id": "abc391_e",
+ "license": "CC（数据集卡）；题面版权归 LeetCode/AtCoder，仅限评测研究",
+ "stratum": "hard",
+ "platform": "atcoder",
+ "role": "reserve",
+ "grader": "lcb_stdio",
+ "func_name": null,
+ "prompt": "编程题：Hierarchical Majority Vote\n\nFor a binary string B = B_1 B_2 \\dots B_{3^n} of length 3^n (n \\geq 1), we define an operation to obtain a binary string C = C_1 C_2 \\dots C_{3^{n-1}} of length 3^{n-1} as follows:\n\n- Partition the elements of B into groups of 3 and take the majority value from each group. That is, for i=1,2,\\dots,3^{n-1}, let C_i be the value that appears most frequently among B_{3i-2}, B_{3i-1}, and B_{3i}.\n\nYou are given a binary string A = A_1 A_2 \\dots A_{3^N} of length 3^N. Let A' = A'_1 be the length-1 string obtained by applying the above operation N times to A.\nDetermine the minimum number of elements of A that must be changed (from 0 to 1 or from 1 to 0) in order to change the value of A'_1.\n\nInput\n\nThe input is given from Standard Input in the following format:\nN\r\nA_1 A_2 \\dots A_{3^N}\n\nOutput\n\nPrint the answer.\n\nConstraints\n\n\n- N is an integer with 1 \\leq N \\leq 13.\n- A is a string of length 3^N consisting of 0 and 1.\n\nSample Input 1\n\n2\r\n010011101\n\nSample Output 1\n\n1\r\n\nFor example, with A=010011101, after applying the operation twice, we obtain:\n\n- First operation: The majority of 010 is 0, of 011 is 1, and of 101 is 1, resulting in 011.\n- Second operation: The majority of 011 is 1, yielding 1.\n\nTo change the final value from 1 to 0, one way is to change the 5th character of A from 1 to 0, yielding A=010001101. After the change, the operations yield:\n\n- First operation: The majority of 010 is 0, of 001 is 0, and of 101 is 1, resulting in 001.\n- Second operation: The majority of 001 is 0, yielding 0.\n\nThus, the minimum number of changes required is 1.\n\nSample Input 2\n\n1\r\n000\n\nSample Output 2\n\n2\n\n请在当前目录写 solution.py：从标准输入读入、向标准输出打印（AtCoder 风格），用 Python 3。\n隐藏测试含更多用例并有时间限制（每个用例约 6 秒）。完成后不需要解释。",
+ "timeout_s": 1500,
+ "batch": "hard2"
+}

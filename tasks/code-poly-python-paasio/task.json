@@ -1,0 +1,16 @@
+{
+ "task_id": "code-poly-python-paasio",
+ "dimension": "编程",
+ "source": "Aider Polyglot (Aider-AI/polyglot-benchmark, 源自 Exercism)",
+ "source_id": "python/paasio",
+ "license": "MIT（Exercism 各语言 track）",
+ "stratum": "python",
+ "role": "main",
+ "grader": "polyglot_python",
+ "test_files": [
+  "paasio_test.py",
+  "test_utils.py"
+ ],
+ "prompt": "# Instructions\n\nReport network IO statistics.\n\nYou are writing a [PaaS][paas], and you need a way to bill customers based on network and filesystem usage.\n\nCreate a wrapper for network connections and files that can report IO statistics.\nThe wrapper must report:\n\n- The total number of bytes read/written.\n- The total number of read/write operations.\n\n[paas]: https://en.wikipedia.org/wiki/Platform_as_a_service\n\n\n\n请修改当前目录下的 paasio.py 完成上述练习，只用标准库。判分时会放入隐藏的单元测试运行；不要改函数/类名。",
+ "timeout_s": 1500
+}
